@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Acervo de Memórias | São Miguel 150+</title>
+<meta name="description" content="Fotografias, documentos e relatos de quem fez e faz São Miguel (RN), reunidos na Campanha de Histórias do São Miguel 150+.">
+<meta name="theme-color" content="#B02E26">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/config.js"></script>
+<script src="js/dados-acervo.js"></script>
+</head>
+<body class="pagina-da-acao" data-eixo="memoria">
+
+<svg class="defs-svg" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <path id="mv-a" d="M3,143 C35,128 70,90 100,45 C120,15 135,2 145,6 C162,12 175,45 185,100 C193,150 200,190 215,220 C230,245 245,258 262,266"/>
+    <path id="mv-b" d="M203,178 C212,140 225,112 240,115 C255,118 248,160 258,160 C268,160 275,130 290,133 C305,137 298,170 312,170 C330,170 345,155 366,148"/>
+    <g id="motivo" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"><use href="#mv-a"/><use href="#mv-b"/></g>
+    <pattern id="padrao-linhas" patternUnits="userSpaceOnUse" width="227" height="324">
+      <g transform="scale(.62)">
+        <use href="#motivo" x="0" y="0"/><use href="#motivo" x="-366" y="0"/><use href="#motivo" x="366" y="0"/>
+        <use href="#motivo" x="-65" y="261"/><use href="#motivo" x="301" y="261"/>
+        <use href="#motivo" x="-65" y="-261"/><use href="#motivo" x="301" y="-261"/>
+      </g>
+    </pattern>
+    <path id="onda" d="M0,0 L55,57 L61,67 L61,74 L57,81 L37,100 L28,112 L18,139 L18,166 L24,185 L33,200 L40,207 L131,210 L88,166 L82,156 L82,148 L84,144 L102,125 L104,125 L117,107 L125,82 L123,48 L115,30 L103,14 L91,3Z"/>
+    <pattern id="ondas-cores" patternUnits="userSpaceOnUse" width="750" height="260" patternTransform="translate(0,-36) scale(.5)">
+      <use href="#onda" x="10" y="44" fill="#EC9F9A"/><use href="#onda" x="160" y="0" fill="#798264"/><use href="#onda" x="310" y="44" fill="#C59354"/><use href="#onda" x="460" y="0" fill="#965049"/><use href="#onda" x="610" y="44" fill="#4D7A93"/>
+    </pattern>
+  </defs>
+</svg>
+
+<a class="pular" href="#lembrancas">Pular para as lembranças</a>
+
+<header class="topo" id="topo">
+  <div class="recipiente topo-interno">
+    <a class="marca" data-link-inicio="" href="index.html" aria-label="São Miguel 150+, ir para a página inicial">
+      <img data-logo src="assets/logo-sao-miguel-150.webp" alt="São Miguel 150+" width="682" height="306">
+    </a>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+    <nav class="navegacao" id="menu-principal" aria-label="Principal">
+      <ul class="menu">
+        <li><a data-link-inicio="#sobre" href="index.html#sobre">Sobre</a></li>
+        <li><a data-link-inicio="#fases" href="index.html#fases">Fases</a></li>
+        <li><a data-link-inicio="#agenda" href="index.html#agenda">Agenda</a></li>
+        <li><a data-link-inicio="#quem-realiza" href="index.html#quem-realiza">Quem realiza</a></li>
+        <li><a data-link-inicio="#apoiar" href="index.html#apoiar">Apoiar</a></li>
+        <li class="menu-acao"><a class="botao botao-vermelho botao-pequeno" href="#enviar">Enviar lembrança</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- CABEÇALHO DA AÇÃO: nome, eixo e descrição vêm de js/dados-acervo.js -->
+  <section class="acao-topo" aria-labelledby="acao-titulo">
+    <svg class="padrao-fundo" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#padrao-linhas)"/></svg>
+    <div class="recipiente acao-topo-grade">
+      <div>
+        <nav aria-label="Você está em">
+          <ol class="migalhas">
+            <li><a data-link-inicio="" href="index.html">Início</a></li>
+            <li><a data-link-inicio="#fases" href="index.html#fases">Fases</a></li>
+            <li><span data-a="eixo-nome">Memória</span></li>
+          </ol>
+        </nav>
+        <div class="acao-eixo">
+          <span class="acao-eixo-marca" data-a="eixo-numero" aria-hidden="true">01</span>
+          <p><span class="sr">Eixo </span><strong data-a="eixo-rotulo">Eixo 01 Memória</strong><em data-a="eixo-pergunta">De onde viemos?</em></p>
+        </div>
+        <p class="acao-sobrenome" data-a="acao">Ação: Campanha de Histórias</p>
+        <h1 class="acao-titulo" id="acao-titulo" data-a="nome">Acervo de Memórias</h1>
+        <p class="acao-descricao" data-a="descricao"></p>
+        <ul class="acao-numeros" data-a="numeros" aria-label="Números do acervo"></ul>
+        <div class="botoes">
+          <a class="botao botao-branco" data-contato="Oi! Quero enviar uma lembrança para o Acervo de Memórias do São Miguel 150+." href="#enviar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V6M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Enviar minha lembrança
+          </a>
+          <a class="botao botao-contorno-claro" href="#enviar">Como participar</a>
+        </div>
+      </div>
+      <img class="acao-ilustra" data-a="ilustracao" src="assets/ilustra-cameras.webp" alt="" width="409" height="305">
+    </div>
+  </section>
+
+  <!-- BARRA DE EXPLORAÇÃO -->
+  <div class="explorar">
+    <div class="recipiente explorar-interno">
+      <div class="busca">
+        <label class="sr" for="busca">Buscar nas lembranças</label>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <input id="busca" type="search" placeholder="Buscar por lugar, nome, época..." autocomplete="off">
+      </div>
+      <div class="tipos" role="group" aria-label="Tipo de lembrança">
+        <button type="button" data-tipo="todas" aria-pressed="true">Todas</button>
+        <button type="button" data-tipo="foto" aria-pressed="false">Fotos</button>
+        <button type="button" data-tipo="texto" aria-pressed="false">Textos</button>
+      </div>
+      <p class="filtro-ativo" data-filtro-ativo hidden>
+        <span>Palavra:</span>
+        <button type="button" data-remover-palavra aria-label="Remover filtro de palavra">
+          <span data-palavra-ativa></span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+        </button>
+      </p>
+    </div>
+  </div>
+
+  <!-- NUVEM DE PALAVRAS -->
+  <section class="recipiente palavras-secao" aria-labelledby="palavras-titulo">
+    <div class="palavras-cab">
+      <h2 id="palavras-titulo">Explore por palavra</h2>
+      <p>As palavras destacadas nas lembranças levam a outras histórias que falam da mesma coisa.</p>
+    </div>
+    <ul class="nuvem" data-nuvem></ul>
+  </section>
+
+  <!-- LEMBRANÇAS -->
+  <section class="recipiente acervo" id="lembrancas" aria-labelledby="lembrancas-titulo">
+    <h2 class="sr" id="lembrancas-titulo">Lembranças</h2>
+    <div class="resultado">
+      <p data-resultado aria-live="polite"></p>
+      <button class="botao-texto" type="button" data-limpar hidden>Limpar filtros</button>
+    </div>
+    <div class="grade-lembrancas" data-grade></div>
+    <div class="mais"><button class="botao botao-contorno" type="button" data-mais hidden>Mostrar mais lembranças</button></div>
+  </section>
+
+  <!-- COMO ENVIAR -->
+  <section class="enviar" id="enviar" aria-labelledby="enviar-titulo">
+    <div class="recipiente enviar-grade">
+      <div>
+        <h2 class="titulo-secao cor-memoria" id="enviar-titulo">Sua lembrança também conta</h2>
+        <p class="lead">Uma cidade inteira tem histórias para contar, inclusive quem já morou aqui e hoje vive fora.</p>
+        <ul class="formas-envio">
+          <li>
+            <span class="marcador"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>
+            <div><h3>WhatsApp</h3><p>Responda às perguntas por texto, áudio, foto ou vídeo.</p></div>
+          </li>
+          <li>
+            <span class="marcador"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="17" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 14.2c2.3.2 4 1.8 4.5 4.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <div><h3>Embaixadores</h3><p>Estudantes ajudam a buscar histórias nas famílias e na comunidade.</p></div>
+          </li>
+          <li>
+            <span class="marcador"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <div><h3>Entrevistas</h3><p>A equipe aprofunda algumas das histórias recebidas.</p></div>
+          </li>
+        </ul>
+        <div class="botoes">
+          <a class="botao botao-vermelho" data-contato="Oi! Quero enviar uma lembrança para o Acervo de Memórias do São Miguel 150+." href="#enviar">Enviar minha lembrança</a>
+          <a class="botao botao-contorno" data-link-inicio="#fases" href="index.html#fases">Conhecer a jornada</a>
+        </div>
+      </div>
+      <img class="enviar-ilustra" src="assets/ilustra-whatsapp.webp" alt="Celular com uma conversa de WhatsApp mostrando a foto de uma rua de São Miguel e a mensagem Minha infância em São Miguel" width="717" height="432" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<!-- VISOR DE FOTO -->
+<dialog class="visor" data-visor aria-labelledby="visor-titulo">
+  <button class="visor-fechar" type="button" data-fechar aria-label="Fechar">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+  <div class="visor-grade">
+    <div class="visor-foto"><img data-visor-img alt=""></div>
+    <div class="visor-info">
+      <h2 class="sr" id="visor-titulo">Foto ampliada</h2>
+      <div data-visor-texto></div>
+      <div class="visor-relacionadas" data-visor-palavras></div>
+      <div data-visor-autoria></div>
+      <div class="visor-nav">
+        <button class="botao-circulo" type="button" data-visor-ant aria-label="Foto anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <button class="botao-circulo" type="button" data-visor-prox aria-label="Próxima foto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <span data-visor-contador></span>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<footer class="rodape">
+  <div class="faixa-ondas faixa-ondas-cores" aria-hidden="true">
+    <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#ondas-cores)"/></svg>
+  </div>
+  <div class="recipiente rodape-grade">
+    <div class="rodape-marca">
+      <img src="assets/logo-150-branco.webp" alt="São Miguel 150+" width="420" height="342" loading="lazy">
+      <p>A cidade vive na gente.</p>
+    </div>
+    <nav class="rodape-nav" aria-label="Rodapé">
+      <h2>Navegue</h2>
+      <ul>
+        <li><a data-link-inicio="#sobre" href="index.html#sobre">Sobre</a></li>
+        <li><a data-link-inicio="#fases" href="index.html#fases">Fases</a></li>
+        <li><a data-link-inicio="#agenda" href="index.html#agenda">Agenda</a></li>
+        <li><a href="#lembrancas">Acervo de Memórias</a></li>
+        <li><a data-link-inicio="#apoiar" href="index.html#apoiar">Apoiar</a></li>
+      </ul>
+    </nav>
+    <div class="rodape-contato">
+      <h2>Contato</h2>
+      <ul data-lista-contato></ul>
+    </div>
+    <div class="rodape-realizacao">
+      <h2>Realização</h2>
+      <img src="assets/smdg-branco.png" alt="São Miguel da Gente" width="534" height="131" loading="lazy">
+    </div>
+  </div>
+  <div class="recipiente rodape-base">
+    <p>© <span data-ano>2026</span> São Miguel da Gente. São Miguel (RN).</p>
+    <a href="#topo">Voltar ao topo</a>
+  </div>
+</footer>
+
+<script src="js/comum.js"></script>
+<script src="js/acervo.js"></script>
+</body>
+</html>

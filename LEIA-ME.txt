@@ -1,0 +1,45 @@
+SÃO MIGUEL 150+  |  SITE
+=========================
+
+COMO COLOCAR NO AR
+Envie a pasta inteira (index.html, acervo.html e as pastas css, js e assets)
+para qualquer hospedagem de site estático: a hospedagem do agendadagente.com,
+Netlify, GitHub Pages, Hostinger etc. Não precisa de banco de dados.
+
+O QUE EDITAR (abra os arquivos num editor de texto, como o Bloco de Notas)
+
+js/config.js  ->  tudo o que muda no site principal
+  - logo: imagem do topo
+  - contato: WhatsApp (só números, com 55 e DDD), e-mail, Instagram
+  - destaque: rótulo, título, texto, botões, imagem e cor de fundo
+      No título, [o] vira a bolinha da marca.
+      tema 'escuro' = texto escuro (fundos claros); 'claro' = texto branco (fotos).
+  - acoes: botões das páginas das ações. liberada: true abre o link;
+      liberada: false mostra o cadeado e quando abre.
+  - eventos: agenda. Use 'AAAA-MM' ou 'AAAA-MM-DD'. Eventos passados ficam
+      mais claros e vão para trás no carrossel sozinhos.
+  - parceiros: nome, logo (coloque a imagem na pasta assets) e link.
+  - apresentacao: link de um PDF para apoiadores (opcional).
+
+js/dados-acervo.js  ->  as lembranças do acervo
+  - Cada lembrança tem: tipo ('foto' ou 'texto'), foto, legenda, relato,
+    autor, detalhe, epoca e ano.
+  - PALAVRAS-FILTRO: escreva a palavra entre chaves no texto: {feira}
+    Para outra forma da mesma palavra: {feirinhas|feira}
+    Para marcar uma palavra que não está no texto: palavras: ['saudade']
+  - As 10 lembranças atuais são EXEMPLOS (fotos = ilustrações do projeto).
+
+COMO CRIAR A PÁGINA DE OUTRA AÇÃO (ex.: Mapa Afetivo)
+  1. Copie acervo.html -> mapa-afetivo.html
+  2. Copie js/dados-acervo.js -> js/dados-mapa-afetivo.js e troque
+     eixo ('identidade'), acao, nome, descricao e ilustracao.
+  3. Em mapa-afetivo.html, troque "js/dados-acervo.js" por
+     "js/dados-mapa-afetivo.js".
+  4. Em js/config.js, na lista acoes, deixe a ação com
+     liberada: true e link: 'mapa-afetivo.html'.
+  As cores da página mudam sozinhas conforme o eixo.
+
+IMAGENS
+  Fotos novas: coloque na pasta assets e escreva o caminho, ex.:
+  foto: 'assets/foto-da-feira-1978.jpg'
+  Prefira imagens com até 1600 px de largura para o site ficar leve.

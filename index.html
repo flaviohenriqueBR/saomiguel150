@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>São Miguel 150+ | A cidade vive na gente</title>
+<meta name="description" content="São Miguel 150+ transforma a celebração dos 150 anos de São Miguel (RN) em um processo de memória, identidade e futuro, com a participação da população.">
+<meta name="theme-color" content="#7CC7E4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+<script src="js/config.js"></script>
+</head>
+<body class="pagina-inicio">
+
+<!-- Desenhos da marca usados como fundo (linha-montanha e ondas) -->
+<svg class="defs-svg" aria-hidden="true" focusable="false" width="0" height="0">
+  <defs>
+    <path id="mv-a" d="M3,143 C35,128 70,90 100,45 C120,15 135,2 145,6 C162,12 175,45 185,100 C193,150 200,190 215,220 C230,245 245,258 262,266"/>
+    <path id="mv-b" d="M203,178 C212,140 225,112 240,115 C255,118 248,160 258,160 C268,160 275,130 290,133 C305,137 298,170 312,170 C330,170 345,155 366,148"/>
+    <g id="motivo" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"><use href="#mv-a"/><use href="#mv-b"/></g>
+    <pattern id="padrao-linhas" patternUnits="userSpaceOnUse" width="227" height="324">
+      <g transform="scale(.62)">
+        <use href="#motivo" x="0" y="0"/><use href="#motivo" x="-366" y="0"/><use href="#motivo" x="366" y="0"/>
+        <use href="#motivo" x="-65" y="261"/><use href="#motivo" x="301" y="261"/>
+        <use href="#motivo" x="-65" y="-261"/><use href="#motivo" x="301" y="-261"/>
+      </g>
+    </pattern>
+    <path id="onda" d="M0,0 L55,57 L61,67 L61,74 L57,81 L37,100 L28,112 L18,139 L18,166 L24,185 L33,200 L40,207 L131,210 L88,166 L82,156 L82,148 L84,144 L102,125 L104,125 L117,107 L125,82 L123,48 L115,30 L103,14 L91,3Z"/>
+    <pattern id="ondas-rosa" patternUnits="userSpaceOnUse" width="300" height="260" patternTransform="translate(0,-34) scale(.42)">
+      <use href="#onda" x="10" y="0" fill="#EC9F9A"/><use href="#onda" x="160" y="44" fill="#EC9F9A"/>
+    </pattern>
+    <pattern id="ondas-cores" patternUnits="userSpaceOnUse" width="750" height="260" patternTransform="translate(0,-36) scale(.5)">
+      <use href="#onda" x="10" y="44" fill="#EC9F9A"/><use href="#onda" x="160" y="0" fill="#798264"/><use href="#onda" x="310" y="44" fill="#C59354"/><use href="#onda" x="460" y="0" fill="#965049"/><use href="#onda" x="610" y="44" fill="#4D7A93"/>
+    </pattern>
+  </defs>
+</svg>
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="recipiente topo-interno">
+    <a class="marca" href="#destaque" aria-label="São Miguel 150+, voltar ao início">
+      <img data-logo src="assets/logo-sao-miguel-150.webp" alt="São Miguel 150+" width="682" height="306">
+    </a>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">
+      <span class="botao-menu-icone" aria-hidden="true"><span></span><span></span><span></span></span>
+      Menu
+    </button>
+    <nav class="navegacao" id="menu-principal" aria-label="Principal">
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#fases">Fases</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#quem-realiza">Quem realiza</a></li>
+        <li><a href="#apoiar">Apoiar</a></li>
+        <li class="menu-acao"><a class="botao botao-vermelho botao-pequeno" data-link-acervo href="acervo.html">Acervo</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <!-- DESTAQUE: conteúdo vem do arquivo js/config.js -->
+  <section class="destaque" id="destaque" aria-labelledby="destaque-titulo" data-tema="escuro">
+    <div class="destaque-fundo" aria-hidden="true"></div>
+    <svg class="destaque-grafismo" viewBox="0 0 368 274" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round">
+        <path pathLength="1" d="M3,143 C35,128 70,90 100,45 C120,15 135,2 145,6 C162,12 175,45 185,100 C193,150 200,190 215,220 C230,245 245,258 262,266"/>
+        <path pathLength="1" d="M203,178 C212,140 225,112 240,115 C255,118 248,160 258,160 C268,160 275,130 290,133 C305,137 298,170 312,170 C330,170 345,155 366,148"/>
+      </g>
+    </svg>
+    <div class="recipiente destaque-conteudo">
+      <p class="destaque-rotulo" data-d="rotulo">Campanha de Histórias</p>
+      <h1 class="destaque-titulo" id="destaque-titulo" data-d="titulo">O que de São Miguel vive em você?</h1>
+      <p class="destaque-texto" data-d="texto"></p>
+      <div class="botoes" data-d="botoes"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+    <div class="faixa-ondas faixa-ondas-vermelha" aria-hidden="true">
+      <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#ondas-rosa)"/></svg>
+    </div>
+    <div class="recipiente sobre-grade">
+      <div class="sobre-texto">
+        <h2 class="titulo-secao cor-memoria" id="sobre-titulo">A ideia</h2>
+        <p class="lead">O São Miguel 150+ transforma a celebração dos 150 anos do município em um processo de memória, identidade e futuro, com 15 meses de trabalho e a participação da população.</p>
+        <p>Vamos reunir histórias e registros da cidade, identificar os símbolos e lugares que representam São Miguel e ouvir os moradores sobre o que desejam para os próximos anos.</p>
+        <p>O resultado é um legado permanente: livros, mapas, vídeos, exposições, acervo histórico, intervenções urbanas e compromissos concretos para a cidade.</p>
+      </div>
+      <aside class="legado" aria-labelledby="legado-titulo">
+        <img class="legado-selo" src="assets/selo-150.webp" alt="" width="352" height="319" loading="lazy">
+        <h3 class="legado-titulo" id="legado-titulo">O que fica para a cidade</h3>
+        <ul class="chips chips-legado">
+          <li>livros</li><li>mapas</li><li>vídeos</li><li>acervo</li><li>exposições</li>
+          <li>muro</li><li>árvores</li><li>cápsula</li><li>carta</li><li>compromissos</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FASES / JORNADA -->
+  <section class="fases" id="fases" aria-labelledby="fases-titulo">
+    <div class="recipiente">
+      <div class="cab-secao">
+        <h2 class="titulo-secao" id="fases-titulo">A jornada</h2>
+        <p>Três eixos ao longo de 15 meses: de onde viemos, quem somos e o que queremos deixar. Toque em cada etapa para ver o que acontece nela.</p>
+      </div>
+
+      <div class="jornada" data-jornada>
+
+        <!-- EIXO 01 -->
+        <button class="etapa" type="button" id="etapa-memoria" data-eixo="memoria" aria-expanded="false" aria-controls="painel-memoria">
+          <span class="etapa-tempo">São Miguel de Ontem</span>
+          <span class="etapa-nome"><span class="etapa-num">01</span>Memória</span>
+          <span class="etapa-pergunta">De onde viemos?</span>
+          <span class="etapa-status" data-status></span>
+          <svg class="etapa-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="painel" id="painel-memoria" role="region" aria-labelledby="etapa-memoria" data-eixo="memoria" hidden>
+          <div class="painel-cab">
+            <p class="painel-eixo">Eixo 01</p>
+            <h3 class="painel-titulo">Memória</h3>
+            <p class="painel-pergunta">De onde viemos?</p>
+            <p class="painel-resumo">Reunimos histórias, registros e acontecimentos que contam a trajetória de São Miguel.</p>
+            <p class="painel-periodo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>out/26 a fev/27: mobilização e coleta de memórias</p>
+          </div>
+          <img class="painel-ilustra" src="assets/ilustra-recontando.webp" alt="Ilustração de um jovem com fones de ouvido e um mapa da cidade, ao lado de fotos antigas e da passagem da Coluna Prestes" width="939" height="323" loading="lazy">
+          <div class="painel-acoes">
+            <article class="acao">
+              <p class="acao-rotulo">Ação</p>
+              <h4 class="acao-nome">Campanha de Histórias</h4>
+              <p class="acao-chamada">Uma cidade inteira tem histórias para contar.</p>
+              <p>Uma campanha para reunir as memórias de quem fez e faz São Miguel, inclusive de quem já morou aqui e hoje vive fora.</p>
+              <ul class="chips chips-eixo"><li>histórias</li><li>fotografias</li><li>documentos</li><li>objetos</li><li>áudios</li><li>vídeos</li><li>tradições</li></ul>
+              <dl class="participacao">
+                <div><dt>WhatsApp</dt><dd>a pessoa responde às perguntas por texto, áudio, foto ou vídeo.</dd></div>
+                <div><dt>Embaixadores</dt><dd>estudantes ajudam a buscar histórias nas famílias e na comunidade.</dd></div>
+                <div><dt>Entrevistas</dt><dd>a equipe aprofunda histórias selecionadas.</dd></div>
+              </dl>
+            </article>
+            <article class="acao">
+              <p class="acao-rotulo">Ação</p>
+              <h4 class="acao-nome">Recontando nossa história</h4>
+              <p class="acao-chamada">A pesquisa histórica que se percorre no território.</p>
+              <p>Além das memórias da população, o projeto aprofunda momentos marcantes da trajetória de São Miguel, com destaque para a passagem da Coluna Prestes, por meio de pesquisa e entrevistas com historiadores.</p>
+            </article>
+          </div>
+          <div class="painel-produtos">
+            <h4 class="painel-subtitulo">O que fica</h4>
+            <ul class="lista-produtos">
+              <li>Acervo de Memórias da Cidade</li><li>Vídeos de pessoas e suas histórias</li><li>Vídeo de conexão entre gerações</li><li>Túnel do Tempo</li><li>Livro de 150 Histórias</li><li>Caminhos da História</li>
+            </ul>
+          </div>
+          <div class="painel-paginas">
+            <h4 class="painel-subtitulo">Páginas das ações</h4>
+            <div class="paginas-botoes" data-acoes="memoria"></div>
+          </div>
+        </div>
+
+        <!-- EIXO 02 -->
+        <button class="etapa" type="button" id="etapa-identidade" data-eixo="identidade" aria-expanded="false" aria-controls="painel-identidade">
+          <span class="etapa-tempo">São Miguel de Hoje</span>
+          <span class="etapa-nome"><span class="etapa-num">02</span>Identidade</span>
+          <span class="etapa-pergunta">Quem somos?</span>
+          <span class="etapa-status" data-status></span>
+          <svg class="etapa-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="painel" id="painel-identidade" role="region" aria-labelledby="etapa-identidade" data-eixo="identidade" hidden>
+          <div class="painel-cab">
+            <p class="painel-eixo">Eixo 02</p>
+            <h3 class="painel-titulo">Identidade</h3>
+            <p class="painel-pergunta">Quem somos?</p>
+            <p class="painel-resumo">Reconhecemos as pessoas, lugares e características que fazem São Miguel ser São Miguel.</p>
+            <p class="painel-periodo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>mar/27 a jun/27: identidade, pesquisa histórica e organização do acervo</p>
+          </div>
+          <img class="painel-ilustra" src="assets/ilustra-mapa-afetivo.webp" alt="Ilustração de famílias e crianças marcando lugares em um grande mapa da cidade" width="843" height="496" loading="lazy">
+          <div class="painel-acoes">
+            <article class="acao">
+              <p class="acao-rotulo">Ação</p>
+              <h4 class="acao-nome">É de São Miguel</h4>
+              <p class="acao-chamada">Palavras que representam uma cidade.</p>
+              <p>Coleta de palavras, expressões, costumes e objetos que as pessoas associam a São Miguel, em escolas, praças, feira, mercado, eventos e redes sociais.</p>
+              <p class="acao-pergunta">Qual palavra representa São Miguel para você?</p>
+            </article>
+            <article class="acao">
+              <p class="acao-rotulo">Ação</p>
+              <h4 class="acao-nome">Mapa Afetivo</h4>
+              <p class="acao-chamada">Um mapa construído por quem vive a cidade.</p>
+              <p>Em um grande mapa físico, os moradores marcam os lugares que têm significado em suas vidas: a infância, os encontros de família, o lugar que representa São Miguel, o lugar que não pode ser esquecido.</p>
+              <p><strong>Versão infantil:</strong> as crianças desenham o lugar de São Miguel que mais importa para elas, e os desenhos entram no mapa afetivo da cidade.</p>
+            </article>
+          </div>
+          <div class="painel-produtos">
+            <h4 class="painel-subtitulo">O que fica</h4>
+            <ul class="lista-produtos">
+              <li>Mapa dos Micaelenses</li><li>Dicionário Afetivo</li><li>Muro de São Miguel</li><li>Mapa Afetivo</li>
+            </ul>
+          </div>
+          <div class="painel-paginas">
+            <h4 class="painel-subtitulo">Páginas das ações</h4>
+            <div class="paginas-botoes" data-acoes="identidade"></div>
+          </div>
+        </div>
+
+        <!-- EIXO 03 -->
+        <button class="etapa" type="button" id="etapa-futuro" data-eixo="futuro" aria-expanded="false" aria-controls="painel-futuro">
+          <span class="etapa-tempo">São Miguel do Amanhã</span>
+          <span class="etapa-nome"><span class="etapa-num">03</span>Futuro</span>
+          <span class="etapa-pergunta">O que queremos?</span>
+          <span class="etapa-status" data-status></span>
+          <svg class="etapa-seta" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="painel" id="painel-futuro" role="region" aria-labelledby="etapa-futuro" data-eixo="futuro" hidden>
+          <div class="painel-cab">
+            <p class="painel-eixo">Eixo 03</p>
+            <h3 class="painel-titulo">Futuro</h3>
+            <p class="painel-pergunta">O que queremos deixar?</p>
+            <p class="painel-resumo">Ouvimos a população e transformamos desejos em compromissos e legados.</p>
+            <p class="painel-periodo"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 10h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>jul/27 a dez/27: escuta sobre o futuro, compromissos e grande entrega final</p>
+          </div>
+          <img class="painel-ilustra" src="assets/ilustra-arvore.webp" alt="Ilustração de moradores registrando ideias na árvore do futuro e recebendo mudas na praça" width="1024" height="434" loading="lazy">
+          <div class="painel-acoes">
+            <article class="acao">
+              <p class="acao-rotulo">Ação</p>
+              <h4 class="acao-nome">Escuta São Miguel</h4>
+              <p class="acao-chamada">O que São Miguel tem de bom, o que precisa mudar e o que ainda precisa existir.</p>
+              <p>Cada pessoa registra sua resposta na árvore do futuro e recebe uma muda para plantar.</p>
+              <ol class="perguntas">
+                <li>O que São Miguel tem de bom e não pode perder?</li>
+                <li>O que precisa ser diferente nos próximos anos?</li>
+                <li>O que ainda não existe e deveria existir em São Miguel?</li>
+              </ol>
+            </article>
+            <article class="acao">
+              <p class="acao-rotulo">Ação</p>
+              <h4 class="acao-nome">Rodas de Conversa</h4>
+              <p class="acao-chamada">Encontros presenciais para aprofundar o que a população levantou.</p>
+              <p>Rodas por tema e rodas gerais, reunindo diferentes perspectivas sobre o futuro da cidade.</p>
+              <ul class="chips chips-eixo"><li>infância</li><li>juventude</li><li>mulheres</li><li>educação</li><li>cultura</li><li>trabalho</li><li>meio ambiente</li></ul>
+            </article>
+          </div>
+          <div class="painel-produtos">
+            <h4 class="painel-subtitulo">O que fica</h4>
+            <ul class="lista-produtos">
+              <li>150 Compromissos de São Miguel</li><li>Carta de São Miguel para o Futuro</li><li>Cápsula do Futuro</li>
+            </ul>
+          </div>
+          <div class="painel-paginas">
+            <h4 class="painel-subtitulo">Páginas das ações</h4>
+            <div class="paginas-botoes" data-acoes="futuro"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section class="agenda" id="agenda" aria-labelledby="agenda-titulo">
+    <div class="recipiente cab-secao cab-com-controles">
+      <div>
+        <h2 class="titulo-secao" id="agenda-titulo">Agenda</h2>
+        <p>Encontros, ações e entregas do São Miguel 150+. O que já aconteceu fica para trás no carrossel.</p>
+      </div>
+      <div class="controles" aria-label="Navegar pela agenda">
+        <button class="botao-circulo" type="button" data-carrossel="anterior" aria-label="Eventos anteriores">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="botao-circulo" type="button" data-carrossel="proximo" aria-label="Próximos eventos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="carrossel" tabindex="0" role="region" aria-label="Eventos da agenda">
+      <ol class="trilho" data-trilho></ol>
+    </div>
+  </section>
+
+  <!-- QUEM REALIZA -->
+  <section class="quem" id="quem-realiza" aria-labelledby="quem-titulo">
+    <svg class="padrao-fundo" aria-hidden="true" focusable="false"><rect width="100%" height="100%" fill="url(#padrao-linhas)"/></svg>
+    <div class="recipiente quem-grade">
+      <div class="quem-texto">
+        <h2 class="titulo-secao" id="quem-titulo">Quem realiza</h2>
+        <img class="quem-logo" src="assets/smdg-branco.png" alt="São Miguel da Gente" width="534" height="131" loading="lazy">
+        <p class="lead">A São Miguel da Gente é uma organização que atua desde 2024 no desenvolvimento local de São Miguel (RN).</p>
+        <p>Criada por jovens com forte vínculo com o município, desenvolve pesquisas, diagnósticos, projetos e espaços de diálogo para compreender a cidade e contribuir para o seu desenvolvimento.</p>
+        <p>Acreditamos que construir uma cidade melhor é um trabalho coletivo. Por isso, atuamos em parceria com pessoas, comunidades, organizações, empresas, pesquisadores e poder público que compartilham o desejo de conhecer melhor São Miguel e construir novas possibilidades para o município.</p>
+        <p>Guiada pelos valores de pertencimento, participação e construção coletiva, a São Miguel da Gente conecta pessoas, ideias e oportunidades para transformar conhecimento em ação.</p>
+        <p class="quem-assinatura">Vamos construir São Miguel juntos.</p>
+        <ul class="quem-links">
+          <li><a data-instagram href="https://instagram.com/saomigueldagente"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>@saomigueldagente</a></li>
+          <li><a data-site href="https://agendadagente.com"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18" fill="none" stroke="currentColor" stroke-width="2"/></svg>agendadagente.com</a></li>
+        </ul>
+      </div>
+      <div class="membros">
+        <h3 class="membros-titulo">Nossos membros</h3>
+        <ul class="membros-lista">
+          <li><figure><img src="assets/membro-deise-louise.webp" alt="Retrato ilustrado de Deise Louise" width="253" height="327" loading="lazy"><figcaption>Deise Louise</figcaption></figure></li>
+          <li><figure><img src="assets/membro-nara-jordana.webp" alt="Retrato ilustrado de Nara Jordana" width="230" height="327" loading="lazy"><figcaption>Nara Jordana</figcaption></figure></li>
+          <li><figure><img src="assets/membro-flavio-henrique.webp" alt="Retrato ilustrado de Flávio Henrique" width="234" height="330" loading="lazy"><figcaption>Flávio Henrique</figcaption></figure></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- APOIAR -->
+  <section class="apoiar" id="apoiar" aria-labelledby="apoiar-titulo">
+    <div class="recipiente apoiar-grade">
+      <div class="apoiar-intro">
+        <h2 class="titulo-secao" id="apoiar-titulo">Como apoiar</h2>
+        <p class="lead">Os 150 anos são uma data. O que fica depois depende de quem caminha junto.</p>
+        <p>Empresas, comércios, instituições e pessoas podem apoiar o São Miguel 150+ e fazer parte de um legado que a cidade vai guardar por muito tempo. As formas de participação e as contrapartidas são combinadas com cada apoiador.</p>
+        <div class="botoes">
+          <a class="botao botao-vermelho" data-contato="Olá! Quero saber como apoiar o São Miguel 150+." href="#apoiar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v10H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Falar com a equipe
+          </a>
+          <a class="botao botao-contorno" data-apresentacao href="#" hidden>Ver apresentação do projeto</a>
+        </div>
+      </div>
+      <div class="apoiar-detalhes">
+        <h3 class="apoiar-subtitulo">Por que apoiar</h3>
+        <ul class="motivos">
+          <li style="--cor: var(--memoria)">
+            <h4>Sua marca junto da história da cidade</h4>
+            <p>O projeto produz livro, exposições, mapas, vídeos e um acervo on-line que vão circular por anos. Apoiar é estar presente nesse legado.</p>
+          </li>
+          <li style="--cor: var(--identidade)">
+            <h4>Perto de quem é de São Miguel</h4>
+            <p>As ações acontecem em escolas, praças, feira, mercado e eventos, com a participação direta dos moradores e de quem vive fora.</p>
+          </li>
+          <li style="--cor: var(--futuro)">
+            <h4>Um investimento que permanece</h4>
+            <p>Além da festa dos 150 anos, o projeto deixa memória organizada, intervenções urbanas e 150 compromissos para o futuro da cidade.</p>
+          </li>
+        </ul>
+        <h3 class="apoiar-subtitulo">Formas de apoiar</h3>
+        <ul class="formas">
+          <li><strong>Patrocínio</strong><span>apoio financeiro a uma ação, a um produto ou ao projeto inteiro.</span></li>
+          <li><strong>Produtos e serviços</strong><span>impressão, transporte, alimentação, espaços, equipamentos.</span></li>
+          <li><strong>Parceria institucional</strong><span>escolas, associações, universidades e poder público.</span></li>
+          <li><strong>Divulgação</strong><span>ajudar a campanha a chegar em mais famílias, aqui e fora.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section class="parceiros" id="parceiros" aria-labelledby="parceiros-titulo">
+    <div class="recipiente">
+      <h2 class="titulo-secao" id="parceiros-titulo">Parceiros</h2>
+      <div class="parceiros-grade">
+        <div class="realizacao">
+          <p>Realização</p>
+          <img class="logo-claro" src="assets/smdg-verde.png" alt="São Miguel da Gente" width="534" height="131" loading="lazy">
+          <img class="logo-escuro" src="assets/smdg-branco.png" alt="" width="534" height="131" loading="lazy">
+        </div>
+        <ul class="parceiros-lista" data-parceiros></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAMADA FINAL -->
+  <section class="chamada" aria-labelledby="chamada-titulo">
+    <div class="recipiente chamada-interna">
+      <p class="chamada-numero" aria-hidden="true">150+</p>
+      <h2 class="chamada-titulo" id="chamada-titulo">O projeto começa celebrando 150 anos. Mas seu propósito é deixar algo para os próximos 150.</h2>
+      <div class="botoes">
+        <a class="botao botao-vermelho" data-contato="Oi! Quero enviar uma lembrança para o São Miguel 150+." href="#">Enviar minha lembrança</a>
+        <a class="botao botao-contorno-escuro" href="#apoiar">Quero apoiar</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="faixa-ondas faixa-ondas-cores" aria-hidden="true">
+    <svg width="100%" height="100%"><rect width="100%" height="100%" fill="url(#ondas-cores)"/></svg>
+  </div>
+  <div class="recipiente rodape-grade">
+    <div class="rodape-marca">
+      <img src="assets/logo-150-branco.webp" alt="São Miguel 150+" width="420" height="342" loading="lazy">
+      <p>A cidade vive na gente.</p>
+    </div>
+    <nav class="rodape-nav" aria-label="Rodapé">
+      <h2>Navegue</h2>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#fases">Fases</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a data-link-acervo href="acervo.html">Acervo de Memórias</a></li>
+        <li><a href="#apoiar">Apoiar</a></li>
+      </ul>
+    </nav>
+    <div class="rodape-contato">
+      <h2>Contato</h2>
+      <ul data-lista-contato></ul>
+    </div>
+    <div class="rodape-realizacao">
+      <h2>Realização</h2>
+      <img src="assets/smdg-branco.png" alt="São Miguel da Gente" width="534" height="131" loading="lazy">
+    </div>
+  </div>
+  <div class="recipiente rodape-base">
+    <p>© <span data-ano>2026</span> São Miguel da Gente. São Miguel (RN).</p>
+    <a href="#destaque">Voltar ao topo</a>
+  </div>
+</footer>
+
+<script src="js/comum.js"></script>
+<script src="js/inicio.js"></script>
+</body>
+</html>
