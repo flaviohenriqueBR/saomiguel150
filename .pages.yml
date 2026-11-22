@@ -58,7 +58,7 @@ content:
         label: Palavras-filtro
         type: string
         list: true
-        description: "Escreva palavras que aparecem no texto (ex.: feira, praça, avó). Elas ficam destacadas sozinhas e levam a outras lembranças com a mesma palavra."
+        description: "Uma por linha: palavras ou nomes que aparecem no texto (ex.: feira, praça, Frei Damião). Ficam destacados sozinhos, com ou sem acento, e levam a outras lembranças com a mesma palavra."
       - name: id
         label: Código da lembrança
         type: uuid

@@ -91,27 +91,47 @@
 
   var itens = LEMBRANCAS.map(function (l, i) {
     var chaves = {};
-    var simples = [];   // palavras da lista, de uma só palavra, para destacar no texto
+    /* Palavras e expressões da lista (ex.: feira, Frei Damião), da mais longa
+       para a mais curta, para destacar no texto */
+    var frases = [];
     (l.palavras || []).forEach(function (p) {
       var k = norm(p);
       if (!k) return;
-      if (!rotulos[k]) rotulos[k] = String(p).trim().toLowerCase();
-      if (k.indexOf(' ') < 0) simples.push(k);
+      if (!rotulos[k]) rotulos[k] = String(p).trim().replace(/\s+/g, ' ');
+      var partes = k.match(/[0-9a-z]+(?:-[0-9a-z]+)*/g);
+      if (partes) frases.push({ k: k, partes: partes });
     });
+    frases.sort(function (a, b) { return b.partes.length - a.partes.length; });
     function botao(visivel, k) {
       chaves[k] = true;
       return '<button type="button" class="palavra" data-palavra="' + esc(k) + '" aria-pressed="false" title="Ver lembranças com ' + esc(rotulos[k]) + '">' + esc(visivel) + '</button>';
     }
     function destacar(trecho) {
-      if (!simples.length) return esc(trecho);
-      var saida = '', ultimo = 0, m;
+      if (!frases.length) return esc(trecho);
+      var toks = [], m;
       PALAVRA.lastIndex = 0;
-      while ((m = PALAVRA.exec(trecho))) {
-        var t = norm(m[0]);
-        var achou = simples.filter(function (k) { return bate(t, k); })[0];
-        if (!achou) continue;
-        saida += esc(trecho.slice(ultimo, m.index)) + botao(m[0], achou);
-        ultimo = PALAVRA.lastIndex;
+      while ((m = PALAVRA.exec(trecho))) toks.push({ ini: m.index, fim: m.index + m[0].length, n: norm(m[0]) });
+      var saida = '', ultimo = 0, i = 0;
+      while (i < toks.length) {
+        var achou = null;
+        for (var f = 0; f < frases.length && !achou; f++) {
+          var partes = frases[f].partes, n = partes.length;
+          if (i + n > toks.length) continue;
+          var ok = true;
+          for (var j = 0; j < n && ok; j++) {
+            /* a última palavra aceita plural (feira/feiras); as outras têm de ser iguais */
+            ok = j === n - 1 ? bate(toks[i + j].n, partes[j]) : toks[i + j].n === partes[j];
+          }
+          if (ok) achou = frases[f];
+        }
+        if (achou) {
+          var fim = toks[i + achou.partes.length - 1].fim;
+          saida += esc(trecho.slice(ultimo, toks[i].ini)) + botao(trecho.slice(toks[i].ini, fim), achou.k);
+          ultimo = fim;
+          i += achou.partes.length;
+        } else {
+          i++;
+        }
       }
       return saida + esc(trecho.slice(ultimo));
     }
@@ -122,7 +142,7 @@
       while ((m = MARCA.exec(s))) {
         var chave = (m[2] || m[1]).trim();
         var k = norm(chave);
-        if (!rotulos[k]) rotulos[k] = chave.toLowerCase();
+        if (!rotulos[k]) rotulos[k] = chave;
         saida += destacar(s.slice(ultimo, m.index)) + botao(m[1].trim(), k);
         ultimo = MARCA.lastIndex;
       }

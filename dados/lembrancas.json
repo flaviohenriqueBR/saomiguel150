@@ -1,38 +1,31 @@
 [
   {
-    "id": "43c90db6-a7f2-4277-9371-d9acb55e9aff",
-    "tipo": "foto",
-    "foto": "/midia/exemplo-rua.webp",
-    "legenda": "Nossa rua no fim da tarde, quando ela era o parque de todo mundo.",
-    "relato": "A gente jogava amarelinha e bola até a mãe chamar pra janta. Do lado tinha a padaria, e o cheiro de pão às cinco horas era o relógio da nossa infância.",
-    "autor": "Antônia Lima",
-    "detalhe": "58 anos, mora no Centro",
+    "tipo": "texto",
+    "relato": "Uma das melhores lembranças que tenho é das Santas Missões de Frei Damião, pois, mesmo menina, nunca saíram da minha mente as lembranças de quando Frei Damião vinha celebrar as Santas Missões e minha mãe sempre nos levava. Teve uma delas em que até me perdi dela e acho que por isso também ficou marcado. Mas sempre lembro com carinho e, nas festas de São Miguel Arcanjo, sempre me traz aquele tempo, as multidões e a lembrança que tivemos aqui desse Frei que hoje é homenageado em nossa cidade.\n\nEu amo essa cidade. ❤️",
+    "autor": "Elizoneide Pinheiro",
+    "detalhe": " mora em São Miguel há praticamente 42 anos",
     "epoca": "Anos 1970",
-    "ano": "1976",
     "palavras": [
-      "rua",
-      "padaria",
-      "infância"
-    ]
+      "Frei Damiao",
+      "São Miguel Arcanjo",
+      "festas"
+    ],
+    "id": "43c90db6-a7f2-4277-9371-d9acb55e9aff"
   },
   {
-    "id": "bc73ff11-071a-42ce-a5c9-61dea7564af5",
     "tipo": "texto",
-    "foto": "",
-    "legenda": "",
     "relato": "Todo sábado minha avó me acordava cedo pra ir à feira. Ela conhecia cada vendedor pelo nome e sempre voltava com uma tapioca pra mim.",
     "autor": "José Ribamar",
     "detalhe": "64 anos, mora em Natal (RN)",
     "epoca": "Anos 1960",
-    "ano": "",
     "palavras": [
       "sábado",
       "avó",
       "feira"
-    ]
+    ],
+    "id": "bc73ff11-071a-42ce-a5c9-61dea7564af5"
   },
   {
-    "id": "103cbbc5-cda6-4184-87fd-d69c202e60f3",
     "tipo": "foto",
     "foto": "/midia/exemplo-avo.webp",
     "legenda": "Minha avó mostrando o álbum da família na calçada de casa.",
@@ -40,30 +33,26 @@
     "autor": "Lucas Fernandes",
     "detalhe": "17 anos, embaixador da Campanha",
     "epoca": "2026",
-    "ano": "",
     "palavras": [
       "avó",
       "família"
-    ]
+    ],
+    "id": "103cbbc5-cda6-4184-87fd-d69c202e60f3"
   },
   {
-    "id": "85508335-0a8e-4b45-9346-ca1fdd720b24",
     "tipo": "texto",
-    "foto": "",
-    "legenda": "",
     "relato": "A festa do padroeiro era o acontecimento do ano. A praça ficava cheia, tinha parque, leilão e a procissão saindo da igreja.",
     "autor": "Francisca das Chagas",
     "detalhe": "71 anos",
     "epoca": "Anos 1970",
-    "ano": "",
     "palavras": [
       "festa",
       "praça",
       "igreja"
-    ]
+    ],
+    "id": "85508335-0a8e-4b45-9346-ca1fdd720b24"
   },
   {
-    "id": "ecd397e7-4619-418b-900d-9d47d0f58787",
     "tipo": "foto",
     "foto": "/midia/exemplo-acude.webp",
     "legenda": "Domingo à tarde na beira do açude.",
@@ -71,86 +60,72 @@
     "autor": "Maria José Alves",
     "detalhe": "49 anos",
     "epoca": "Anos 1990",
-    "ano": "",
     "palavras": [
       "açude"
-    ]
+    ],
+    "id": "ecd397e7-4619-418b-900d-9d47d0f58787"
   },
   {
-    "id": "2bea6306-5c03-48df-810e-16328beeb37d",
     "tipo": "texto",
-    "foto": "",
-    "legenda": "",
     "relato": "Saí de São Miguel com 19 anos pra trabalhar fora. Até hoje, quando cai chuva, lembro do cheiro de terra molhada na rua da casa da minha mãe.",
     "autor": "Raimundo Nonato",
     "detalhe": "55 anos, mora em São Paulo (SP)",
     "epoca": "Anos 1980",
-    "ano": "",
     "palavras": [
       "chuva",
       "rua",
       "saudade"
-    ]
+    ],
+    "id": "2bea6306-5c03-48df-810e-16328beeb37d"
   },
   {
-    "id": "a30540f4-0b66-4a08-80b7-d9962bb4a6fc",
     "tipo": "texto",
-    "foto": "",
-    "legenda": "",
     "relato": "Na escola, a professora fazia a gente decorar o hino da cidade. No recreio era futebol no barro até o sino tocar.",
     "autor": "Pedro Henrique Costa",
     "detalhe": "40 anos",
     "epoca": "Anos 1990",
-    "ano": "",
     "palavras": [
       "escola",
       "futebol"
-    ]
+    ],
+    "id": "a30540f4-0b66-4a08-80b7-d9962bb4a6fc"
   },
   {
-    "id": "25eb7043-565a-4574-8fec-0684ecfa60be",
     "tipo": "foto",
     "foto": "/midia/exemplo-praca.webp",
     "legenda": "As árvores da praça que viram minha infância inteira.",
-    "relato": "",
     "autor": "Ana Cláudia Souza",
     "detalhe": "36 anos",
     "epoca": "Anos 2000",
-    "ano": "",
     "palavras": [
       "praça",
       "infância"
-    ]
+    ],
+    "id": "25eb7043-565a-4574-8fec-0684ecfa60be"
   },
   {
-    "id": "b269d8d2-e326-43d1-a950-6d8086a7d7c0",
     "tipo": "texto",
-    "foto": "",
-    "legenda": "",
     "relato": "O futebol de domingo parava a cidade. Meu pai nunca perdeu um jogo, e depois a turma se encontrava na praça pra comentar cada lance.",
     "autor": "Cícero Souza",
     "detalhe": "68 anos",
     "epoca": "Anos 1980",
-    "ano": "",
     "palavras": [
       "futebol",
       "praça"
-    ]
+    ],
+    "id": "b269d8d2-e326-43d1-a950-6d8086a7d7c0"
   },
   {
-    "id": "ac343249-e7a0-4370-a885-9988ad7214c2",
     "tipo": "texto",
-    "foto": "",
-    "legenda": "",
     "relato": "Minha avó fazia bolo pra vender na feira. Eu ia junto carregando a bandeja e voltava com o bolso cheio de moedas. Hoje, longe, o que mais sinto é saudade daquelas manhãs.",
     "autor": "Josefa Martins",
     "detalhe": "45 anos, mora em Mossoró (RN)",
     "epoca": "Anos 1980",
-    "ano": "",
     "palavras": [
       "avó",
       "feira",
       "saudade"
-    ]
+    ],
+    "id": "ac343249-e7a0-4370-a885-9988ad7214c2"
   }
 ]

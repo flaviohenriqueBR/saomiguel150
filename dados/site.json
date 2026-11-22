@@ -1,9 +1,7 @@
 {
   "contato": {
     "whatsapp": "5584991454401",
-    "comunidade": "",
     "instagram": "saomigueldagente",
-    "email": "",
     "site": "https://agendadagente.com"
   },
   "destaque": {
@@ -42,6 +40,5 @@
       "resumo": "Ouvir a cidade e transformar desejos em compromissos para os próximos anos."
     }
   },
-  "apresentacao": "/midia/sao-miguel-150-apresentacao.pdf",
-  "parceiros": []
+  "apresentacao": "/midia/sao-miguel-150-apresentacao.pdf"
 }
