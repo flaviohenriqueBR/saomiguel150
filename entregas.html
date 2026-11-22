@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Entregas | São Miguel 150+</title>
+<meta name="description" content="O que o São Miguel 150+ deixa para a cidade: acervo, livros, mapas, vídeos, exposições e compromissos, com o andamento de cada entrega.">
+<meta name="theme-color" content="#F2EBDE">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="São Miguel 150+">
+<meta property="og:title" content="Entregas | São Miguel 150+">
+<meta property="og:description" content="O que o São Miguel 150+ deixa para a cidade: acervo, livros, mapas, vídeos, exposições e compromissos, com o andamento de cada entrega.">
+<meta property="og:image" content="assets/compartilhar.jpg">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="entregas">
+<div data-topo></div>
+<script src="js/comum.js"></script>
+
+<main id="conteudo">
+  <section class="pagina-cab" aria-labelledby="pagina-titulo">
+    <div class="recipiente">
+      <nav aria-label="Você está em"><ol class="migalhas"><li><a href="index.html">Início</a></li><li><span aria-current="page">Entregas</span></li></ol></nav>
+      <h1 id="pagina-titulo">Entregas</h1>
+      <p class="intro">O projeto começa celebrando 150 anos, mas seu propósito é deixar algo para os próximos 150. Acompanhe aqui o que já ficou para a cidade e o que vem por aí.</p>
+    </div>
+  </section>
+
+  <section class="secao" aria-label="Lista de entregas">
+    <div class="recipiente">
+      <div class="entregas-barra">
+        <div class="tipos" role="group" aria-label="Filtrar por fase" data-filtros></div>
+        <p class="entregas-resumo" data-resumo aria-live="polite"></p>
+      </div>
+      <div class="entregas-grade" data-entregas></div>
+    </div>
+  </section>
+</main>
+
+<div data-rodape></div>
+<script src="js/entregas.js"></script>
+</body>
+</html>

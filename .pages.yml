@@ -1,0 +1,382 @@
+# Painel de edição do site São Miguel 150+ (Pages CMS: https://app.pagescms.org)
+# Cada item abaixo vira um formulário no painel.
+
+media:
+  input: midia
+  output: /midia
+  rename: safe
+  categories: [image, document]
+
+content:
+
+  # ------------------------------------------------------------------
+  - name: lembrancas
+    label: Acervo de Memórias
+    type: file
+    path: dados/lembrancas.json
+    format: json
+    list: true
+    fields:
+      - name: tipo
+        label: Tipo
+        type: select
+        required: true
+        options:
+          values:
+            - name: foto
+              label: Foto
+            - name: texto
+              label: Só texto
+      - name: foto
+        label: Foto
+        type: image
+        description: Só para lembranças do tipo Foto.
+      - name: legenda
+        label: Legenda da foto
+        type: string
+      - name: relato
+        label: Relato
+        type: text
+        description: O texto da lembrança, do jeito que a pessoa contou.
+      - name: autor
+        label: Quem enviou
+        type: string
+        required: true
+      - name: detalhe
+        label: Sobre quem enviou
+        type: string
+        description: "Opcional. Ex.: 58 anos, mora no Centro"
+      - name: epoca
+        label: Época
+        type: string
+        description: "Opcional. Ex.: Anos 1970"
+      - name: ano
+        label: Ano da foto
+        type: string
+        description: "Opcional. Aparece impresso no canto da foto. Ex.: 1976"
+      - name: palavras
+        label: Palavras-filtro
+        type: string
+        list: true
+        description: "Escreva palavras que aparecem no texto (ex.: feira, praça, avó). Elas ficam destacadas sozinhas e levam a outras lembranças com a mesma palavra."
+      - name: id
+        label: Código da lembrança
+        type: uuid
+        options:
+          editable: false
+        description: Gerado sozinho. Serve para as curtidas e o link de compartilhar. Não precisa mexer.
+
+  # ------------------------------------------------------------------
+  - name: agenda
+    label: Agenda
+    type: file
+    path: dados/agenda.json
+    format: json
+    list: true
+    fields:
+      - name: titulo
+        label: Título
+        type: string
+        required: true
+      - name: fase
+        label: Fase
+        type: select
+        required: true
+        options:
+          values:
+            - name: memoria
+              label: Memória
+            - name: identidade
+              label: Identidade
+            - name: futuro
+              label: Futuro
+      - name: inicio
+        label: Começa em
+        type: string
+        required: true
+        pattern:
+          regex: "^\\d{4}-\\d{2}(-\\d{2})?$"
+          message: "Use ano-mês (2026-12) ou ano-mês-dia (2026-12-05)"
+        description: "Ano-mês (2026-12) ou ano-mês-dia (2026-12-05)"
+      - name: fim
+        label: Termina em
+        type: string
+        pattern:
+          regex: "^$|^\\d{4}-\\d{2}(-\\d{2})?$"
+          message: "Use ano-mês (2027-06) ou deixe vazio"
+        description: "Opcional, para o que dura mais de um mês. Ex.: 2027-06"
+      - name: texto
+        label: Resumo
+        type: text
+        description: Uma frase curta que aparece na agenda.
+      - name: local
+        label: Local
+        type: string
+      - name: participar
+        label: Tem participação do público?
+        type: boolean
+        description: "Se marcado, aparece o botão Participar (enquanto estiver acontecendo) ou Me avise (antes de começar), os dois pelo WhatsApp."
+      - name: mensagem
+        label: Mensagem pronta do WhatsApp
+        type: string
+        description: "Opcional. Ex.: Oi! Quero enviar uma lembrança para o São Miguel 150+."
+      - name: link
+        label: Link
+        type: string
+        description: "Opcional. Página para onde o título leva. Ex.: acervo.html"
+      - name: id
+        label: Nome curto
+        type: string
+        pattern:
+          regex: "^$|^[a-z0-9-]+$"
+          message: "Só letras minúsculas sem acento, números e hífen"
+        description: "Necessário para ter página própria. Ex.: mapa-afetivo"
+      - name: detalhes
+        label: Texto da página própria
+        type: text
+        description: "Se preenchido (junto com o nome curto), o título ganha uma página com este texto."
+      - name: perguntas
+        label: Perguntas
+        type: string
+        list: true
+        description: Opcional. Aparecem em destaque na página própria.
+      - name: imagem
+        label: Imagem da página própria
+        type: image
+
+  # ------------------------------------------------------------------
+  - name: entregas
+    label: Entregas
+    type: file
+    path: dados/entregas.json
+    format: json
+    list: true
+    fields:
+      - name: nome
+        label: Nome
+        type: string
+        required: true
+      - name: fase
+        label: Fase
+        type: select
+        options:
+          values:
+            - name: memoria
+              label: Memória
+            - name: identidade
+              label: Identidade
+            - name: futuro
+              label: Futuro
+      - name: status
+        label: Situação
+        type: select
+        required: true
+        options:
+          values:
+            - name: prevista
+              label: Prevista
+            - name: construcao
+              label: Em construção
+            - name: entregue
+              label: Entregue
+      - name: previsao
+        label: Previsão
+        type: string
+        description: "Opcional. Ex.: jul 2027"
+      - name: descricao
+        label: Descrição
+        type: text
+      - name: imagem
+        label: Imagem
+        type: image
+      - name: link
+        label: Link
+        type: string
+        description: "Opcional. Página da entrega pronta. Ex.: acervo.html"
+      - name: atividade
+        label: Vem da atividade
+        type: string
+        description: "Opcional. Nome curto da atividade da agenda que gera esta entrega (ex.: escuta). Ela aparece na página dessa atividade."
+      - name: posicaoImagem
+        type: string
+        hidden: true
+
+  # ------------------------------------------------------------------
+  - name: membros
+    label: Membros
+    type: file
+    path: dados/membros.json
+    format: json
+    list: true
+    fields:
+      - name: nome
+        label: Nome
+        type: string
+        required: true
+      - name: foto
+        label: Foto
+        type: image
+        description: De preferência vertical (3 por 4).
+      - name: funcao
+        label: Função no projeto
+        type: string
+      - name: bio
+        label: Biografia
+        type: text
+        description: De 2 a 4 frases.
+      - name: instagram
+        label: Instagram
+        type: string
+        description: Só o usuário, sem @.
+
+  # ------------------------------------------------------------------
+  - name: site
+    label: Configurações do site
+    type: file
+    path: dados/site.json
+    format: json
+    fields:
+      - name: contato
+        label: Contato
+        type: object
+        fields:
+          - name: whatsapp
+            label: WhatsApp do projeto
+            type: string
+            description: "Só números, com 55 e DDD. Ex.: 5584991454401"
+          - name: comunidade
+            label: Link de convite da comunidade do WhatsApp
+            type: string
+            description: "Ex.: https://chat.whatsapp.com/... Com ele, os botões Me avise convidam a entrar na comunidade. Sem ele, abrem uma mensagem para o WhatsApp do projeto."
+          - name: instagram
+            label: Instagram
+            type: string
+          - name: email
+            label: E-mail
+            type: string
+          - name: site
+            label: Site
+            type: string
+      - name: destaque
+        label: Chamada principal (topo da página inicial)
+        type: object
+        fields:
+          - name: rotulo
+            label: Etiqueta
+            type: string
+          - name: titulo
+            label: Título
+            type: string
+            description: "Escreva [o] no lugar da letra o (sem acento) para virar a bolinha da marca."
+          - name: texto
+            label: Texto
+            type: text
+          - name: botao
+            label: Texto do botão
+            type: string
+          - name: mensagem
+            label: Mensagem pronta do WhatsApp
+            type: string
+          - name: imagem
+            label: Imagem de fundo
+            type: image
+          - name: cor
+            label: Cor de fundo
+            type: string
+            description: "Código da cor. Céu da marca: #7CC7E4"
+          - name: tema
+            label: Cor do texto
+            type: select
+            options:
+              values:
+                - name: escuro
+                  label: Escuro (para fundos claros)
+                - name: claro
+                  label: Branco (para fotos)
+      - name: fases
+        label: As três fases
+        type: object
+        fields:
+          - name: memoria
+            label: Memória
+            type: object
+            fields:
+              - name: nome
+                label: Nome
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: pergunta
+                label: Pergunta
+                type: string
+              - name: inicio
+                label: Começa em (ano-mês)
+                type: string
+              - name: fim
+                label: Termina em (ano-mês)
+                type: string
+              - name: resumo
+                label: Resumo
+                type: text
+          - name: identidade
+            label: Identidade
+            type: object
+            fields:
+              - name: nome
+                label: Nome
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: pergunta
+                label: Pergunta
+                type: string
+              - name: inicio
+                label: Começa em (ano-mês)
+                type: string
+              - name: fim
+                label: Termina em (ano-mês)
+                type: string
+              - name: resumo
+                label: Resumo
+                type: text
+          - name: futuro
+            label: Futuro
+            type: object
+            fields:
+              - name: nome
+                label: Nome
+                type: string
+              - name: subtitulo
+                label: Subtítulo
+                type: string
+              - name: pergunta
+                label: Pergunta
+                type: string
+              - name: inicio
+                label: Começa em (ano-mês)
+                type: string
+              - name: fim
+                label: Termina em (ano-mês)
+                type: string
+              - name: resumo
+                label: Resumo
+                type: text
+      - name: apresentacao
+        label: Apresentação para apoiadores (PDF)
+        type: file
+      - name: parceiros
+        label: Parceiros
+        type: object
+        list: true
+        fields:
+          - name: nome
+            label: Nome
+            type: string
+          - name: logo
+            label: Logo
+            type: image
+          - name: link
+            label: Link
+            type: string

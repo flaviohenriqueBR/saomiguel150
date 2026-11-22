@@ -1,0 +1,47 @@
+{
+  "contato": {
+    "whatsapp": "5584991454401",
+    "comunidade": "",
+    "instagram": "saomigueldagente",
+    "email": "",
+    "site": "https://agendadagente.com"
+  },
+  "destaque": {
+    "rotulo": "Campanha de Histórias",
+    "titulo": "[O] que de Sã[o] Miguel vive em v[o]cê?",
+    "texto": "Uma foto antiga, um causo de família, a lembrança de um lugar. Mande a sua memória pelo WhatsApp e ajude a contar os 150 anos da cidade.",
+    "botao": "Enviar minha lembrança",
+    "mensagem": "Oi! Quero enviar uma lembrança para o São Miguel 150+.",
+    "imagem": "/assets/lago.jpg",
+    "cor": "#7CC7E4",
+    "tema": "escuro"
+  },
+  "fases": {
+    "memoria": {
+      "nome": "Memória",
+      "subtitulo": "São Miguel de Ontem",
+      "pergunta": "De onde viemos?",
+      "inicio": "2026-10",
+      "fim": "2027-02",
+      "resumo": "Reunir as memórias e os registros que contam a trajetória da cidade."
+    },
+    "identidade": {
+      "nome": "Identidade",
+      "subtitulo": "São Miguel de Hoje",
+      "pergunta": "Quem somos?",
+      "inicio": "2027-03",
+      "fim": "2027-06",
+      "resumo": "Reconhecer as pessoas, os lugares e as palavras que fazem São Miguel ser São Miguel."
+    },
+    "futuro": {
+      "nome": "Futuro",
+      "subtitulo": "São Miguel do Amanhã",
+      "pergunta": "O que queremos deixar?",
+      "inicio": "2027-07",
+      "fim": "2027-12",
+      "resumo": "Ouvir a cidade e transformar desejos em compromissos para os próximos anos."
+    }
+  },
+  "apresentacao": "/midia/sao-miguel-150-apresentacao.pdf",
+  "parceiros": []
+}
