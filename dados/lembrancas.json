@@ -3,7 +3,7 @@
     "tipo": "texto",
     "relato": "Uma das melhores lembranças que tenho é das Santas Missões de Frei Damião, pois, mesmo menina, nunca saíram da minha mente as lembranças de quando Frei Damião vinha celebrar as Santas Missões e minha mãe sempre nos levava. Teve uma delas em que até me perdi dela e acho que por isso também ficou marcado. Mas sempre lembro com carinho e, nas festas de São Miguel Arcanjo, sempre me traz aquele tempo, as multidões e a lembrança que tivemos aqui desse Frei que hoje é homenageado em nossa cidade.\n\nEu amo essa cidade. ❤️",
     "autor": "Elizoneide Pinheiro",
-    "detalhe": " mora em São Miguel há praticamente 42 anos",
+    "detalhe": " mora em São Miguel há 42 anos",
     "epoca": "Anos 1970",
     "palavras": [
       "Frei Damiao",
@@ -13,119 +13,90 @@
     "id": "43c90db6-a7f2-4277-9371-d9acb55e9aff"
   },
   {
-    "tipo": "texto",
-    "relato": "Todo sábado minha avó me acordava cedo pra ir à feira. Ela conhecia cada vendedor pelo nome e sempre voltava com uma tapioca pra mim.",
-    "autor": "José Ribamar",
-    "detalhe": "64 anos, mora em Natal (RN)",
-    "epoca": "Anos 1960",
-    "palavras": [
-      "sábado",
-      "avó",
-      "feira"
-    ],
-    "id": "bc73ff11-071a-42ce-a5c9-61dea7564af5"
-  },
-  {
     "tipo": "foto",
-    "foto": "/midia/exemplo-avo.webp",
-    "legenda": "Minha avó mostrando o álbum da família na calçada de casa.",
-    "relato": "Cada foto tinha uma história, e ela lembrava de todas. Gravei tudo no celular pra não perder nenhuma.",
-    "autor": "Lucas Fernandes",
-    "detalhe": "17 anos, embaixador da Campanha",
-    "epoca": "2026",
+    "foto": "/midia/whatsapp-image-2026-11-22-at-124118.jpeg",
+    "legenda": "Junina Lá de Nóis no Pátio do Forró",
+    "relato": "Uma das lembranças mais especiais que tenho de São Miguel é, sem dúvidas, o tempo em que fiz parte da Junina Lá de Nóis. Uma época muito especial da minha vida, que deixou marcas bonitas na minha história e que guardo com muito carinho. Lembro dos ensaios, das amizades que construímos, da expectativa pela chegada do São João, dos figurinos, das músicas, das coreografias e de toda a alegria que sentíamos ao entrar na quadra para nos apresentar. Era muito mais do que dançar: era fazer parte de um grupo, compartilhar sonhos, viver momentos de união e representar uma tradição tão bonita da nossa terra. As quadrilhas representam uma parte da cultura e da identidade micaelense. A quadrilha é uma expressão das nossas raízes, uma tradição que reúne pessoas, aproxima gerações e mantém viva a alegria do nosso São João. E eu tenho muito orgulho de ter feito parte dessa história.\n\nTenho saudade daquele tempo, das pessoas, dos encontros e de tudo o que vivemos. Afinal, algumas fases passam, mas as lembranças permanecem. E, se existe algo que tenho certeza, é que uma parte muito bonita da minha história foi escrita dançando pela Junina Lá de Nóis, na minha cidade. São Miguel é feita de lugares, pessoas, tradições e histórias. E essa é uma das histórias que tenho orgulho de contar!",
+    "autor": "Alyda Torres",
+    "detalhe": "25 anos",
     "palavras": [
-      "avó",
-      "família"
-    ],
-    "id": "103cbbc5-cda6-4184-87fd-d69c202e60f3"
-  },
-  {
-    "tipo": "texto",
-    "relato": "A festa do padroeiro era o acontecimento do ano. A praça ficava cheia, tinha parque, leilão e a procissão saindo da igreja.",
-    "autor": "Francisca das Chagas",
-    "detalhe": "71 anos",
-    "epoca": "Anos 1970",
-    "palavras": [
-      "festa",
-      "praça",
-      "igreja"
-    ],
-    "id": "85508335-0a8e-4b45-9346-ca1fdd720b24"
-  },
-  {
-    "tipo": "foto",
-    "foto": "/midia/exemplo-acude.webp",
-    "legenda": "Domingo à tarde na beira do açude.",
-    "relato": "Foi numa caminhada dessas que eu conheci meu marido. Até hoje a gente volta lá todo domingo.",
-    "autor": "Maria José Alves",
-    "detalhe": "49 anos",
-    "epoca": "Anos 1990",
-    "palavras": [
-      "açude"
-    ],
-    "id": "ecd397e7-4619-418b-900d-9d47d0f58787"
-  },
-  {
-    "tipo": "texto",
-    "relato": "Saí de São Miguel com 19 anos pra trabalhar fora. Até hoje, quando cai chuva, lembro do cheiro de terra molhada na rua da casa da minha mãe.",
-    "autor": "Raimundo Nonato",
-    "detalhe": "55 anos, mora em São Paulo (SP)",
-    "epoca": "Anos 1980",
-    "palavras": [
-      "chuva",
-      "rua",
-      "saudade"
-    ],
-    "id": "2bea6306-5c03-48df-810e-16328beeb37d"
-  },
-  {
-    "tipo": "texto",
-    "relato": "Na escola, a professora fazia a gente decorar o hino da cidade. No recreio era futebol no barro até o sino tocar.",
-    "autor": "Pedro Henrique Costa",
-    "detalhe": "40 anos",
-    "epoca": "Anos 1990",
-    "palavras": [
-      "escola",
-      "futebol"
-    ],
-    "id": "a30540f4-0b66-4a08-80b7-d9962bb4a6fc"
-  },
-  {
-    "tipo": "foto",
-    "foto": "/midia/exemplo-praca.webp",
-    "legenda": "As árvores da praça que viram minha infância inteira.",
-    "autor": "Ana Cláudia Souza",
-    "detalhe": "36 anos",
-    "epoca": "Anos 2000",
-    "palavras": [
-      "praça",
-      "infância"
-    ],
-    "id": "25eb7043-565a-4574-8fec-0684ecfa60be"
-  },
-  {
-    "tipo": "texto",
-    "relato": "O futebol de domingo parava a cidade. Meu pai nunca perdeu um jogo, e depois a turma se encontrava na praça pra comentar cada lance.",
-    "autor": "Cícero Souza",
-    "detalhe": "68 anos",
-    "epoca": "Anos 1980",
-    "palavras": [
-      "futebol",
-      "praça"
+      "São João",
+      "músicas",
+      "Junina Lá de Nóis",
+      "Pátio do Forró"
     ],
     "id": "b269d8d2-e326-43d1-a950-6d8086a7d7c0"
   },
   {
     "tipo": "texto",
-    "relato": "Minha avó fazia bolo pra vender na feira. Eu ia junto carregando a bandeja e voltava com o bolso cheio de moedas. Hoje, longe, o que mais sinto é saudade daquelas manhãs.",
-    "autor": "Josefa Martins",
-    "detalhe": "45 anos, mora em Mossoró (RN)",
-    "epoca": "Anos 1980",
+    "relato": "Das muitas lembranças que poderia citar, uma é sempre se destaca e me faz viajar no tempo até meus dias de infância: a cigarreira de Zé Lipson.\nNas minhas primeiras lembranças da cigarreira, ela ainda era localizada em cima da praça 07 de setembro, mas logo foi transferida para um prédio em frente, ao lado da Farmácia de Louro.\nMe lembro bem daquelas duas portas estreitas e compridas, modelo de fachada comum na época. Subia-se dois batentes e logo estávamos dentro do local mais concorrido das crianças de São Miguel. O que antes era uma cigarreira que vendia doces, cigarros e álbuns de figurinha, se tornou um point por causa dos Video Games!\nAh! Os vídeo games! Eram máquinas enormes, com botões e uma alavanca para os movimentos. Todo dinheiro das crianças daquela época era para confeitos, vídeo game, ou álbuns de figurinhas. Eu amava esses álbuns, tinha uma coleção, capaz de ainda encontrar meu álbum dos Mamonas Assassinas guardado - um grande clássico -  Tenho também a lembrança de um varal onde ele pendurava as revistinhas da Turma da Mônica, eu sonhava com as revistinhas, mas nunca tinha dinheiro suficiente para comprá-las, ficou só a lembrança, mesmo.\nAcima de tudo, lembro da figura de Zé Lipson atrás do balcão, aquele homem grandão, sério, mas bem paciente com a molecada.\n Não me recordo de quando fechou, simplesmente, um dia, não estava mais lá. Sumiu concretamente, mas não da minha memórias e de muitos micaelenses.\n",
+    "autor": "Sonayra Maria",
     "palavras": [
-      "avó",
-      "feira",
-      "saudade"
+      "Zé Lipson",
+      "cigarreira",
+      "praça 07 de setembro",
+      "Farmácia de Louro",
+      "vídeo games"
     ],
-    "id": "ac343249-e7a0-4370-a885-9988ad7214c2"
+    "id": "7723c9bc-d81b-4b9e-b3f9-ae0d10a4f8a8"
+  },
+  {
+    "tipo": "texto",
+    "relato": "Quando eu penso em São Miguel, a primeira coisa que me vem à cabeça é o Cedoc, que é a escola onde estudei desde criança até os quatorze anos. Até hoje, lembro daquele lugar com enorme carinho. Para mim, era muito mais do que uma escola, era como se fosse uma segunda família. Eu chegava mais cedo, saía mais tarde, ficava esperando com Raiulton e com Tia Ocília até meus pais virem me buscar.\n\nEu lembro da gente sentado no chão da escola para rezar. Lembro da gincana, dos recitais, das festividades que a gente fazia. Foi ali que me ajudaram a crescer, não só como estudante, mas principalmente como pessoa. E o mais bonito é que hoje eu tenho amigos desde aquela época.\n\nHoje eu moro em Natal, mas guardo comigo as lembranças daquele tempo, que foi muito especial na minha vida.",
+    "autor": "Nara Jordana",
+    "detalhe": "25 anos, mora em Natal hoje",
+    "palavras": [
+      "Cedoc"
+    ],
+    "id": "c9bee0df-4339-40c8-adcb-69e82caf2b76"
+  },
+  {
+    "tipo": "texto",
+    "relato": "Quando eu lembro de São Miguel, pra além da minha família e todos os momentos bons que eu vivi na cidade, eu lembro muito do Interact. Quando eu fui de São Paulo pra lá, foi no grupo que eu encontrei acolhimento e também uma forma de me envolver com a cidade. Eu lembro muito das ações do sábado de manhã, das quermesses de São João e das reuniões que sempre terminavam em algum outro canto da cidade. E eu tenho muito orgulho da juventude daquela época e de tudo que a gente conseguiu construir juntos, mas também de cada um, cada uma vem construindo na sua trajetória individual. ",
+    "autor": "Flávio",
+    "detalhe": "25 anos, mora em São Paulo",
+    "palavras": [
+      "Interact",
+      "quermesses"
+    ],
+    "id": "b23f05de-839b-4832-ad9f-52876b23431b"
+  },
+  {
+    "tipo": "texto",
+    "relato": "Quando eu penso em São Miguel, lembro logo do Pátio do Forró. Foi ali que passei tantas horas da minha adolescência com os meus amigos. E, naquela época, o Pátio era bem mais tranquilo. A gente ia para lá sem precisar de muito. Sentava na calçada, conversava sobre as coisas da vida, olhava a lua e deixava o tempo passar.\n\nHoje, morando em Fortaleza, sempre que volto para São Miguel e vejo aquele Pátio supermovimentado, fico feliz em perceber que aquele mesmo cenário hoje cria memórias completamente diferentes para uma nova geração.",
+    "autor": "Deise Fernandes",
+    "detalhe": "mora em Fortaleza",
+    "palavras": [
+      "Pátio do Forró",
+      "calçada"
+    ],
+    "id": "64f3b008-d6fd-45d2-9324-c83f9308f245"
+  },
+  {
+    "tipo": "texto",
+    "relato": "Quando eu penso em São Miguel, a primeira memória que já me vem à cabeça é a Festa de São Miguel Arcanjo. Pode parecer meio clichê falar isso, mas é porque é um momento muito único e muito especial para todo micaelense. Eu acho que as primeiras memórias de infância que já de imediato vêm à minha cabeça quando penso em São Miguel são a banda de música, sempre percorrendo a cidade; o cheiro de pipoca com bacon, que já é clássico nosso; sorvete de água suja, como a gente costuma brincar; e, claro, sem dúvida, o nosso novenário, que é muito especial, muito único e é nosso, da nossa gente. E quando eu paro para pensar em São Miguel, lembro de imediato da Rua Grande, que foi a rua onde cresci. Eu nasci e vivi a minha vida inteira na casa da minha avó, no Casarão Rosado, da Rua Grande. Da gente sentada na calçada, conversando horas e horas a fio. Então, são coisas únicas do ser micaelense que marcam a vida de toda pessoa que passa por São Miguel.",
+    "autor": "Maria Augusta",
+    "detalhe": "mora em Fortaleza",
+    "palavras": [
+      "Festa de São Miguel Arcanjo",
+      "banda",
+      "pipoca com bacon",
+      "novená",
+      "Rua Grande",
+      "calçada"
+    ],
+    "id": "b40fc536-aa2b-4924-add5-0b3eaf688066"
+  },
+  {
+    "tipo": "foto",
+    "foto": "/midia/d67b1cfc-9fef-4aa7-99e4-55f48cb21442.jpeg",
+    "legenda": "Calçada da Rua Grande",
+    "relato": "A icônica calçada",
+    "autor": "Maria Augusta",
+    "palavras": [
+      "Rua Grande",
+      "calçada"
+    ],
+    "id": "8ba6523c-9719-47ea-8b24-dce677dd59fa"
   }
 ]
