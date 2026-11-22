@@ -13,119 +13,17 @@
     "id": "43c90db6-a7f2-4277-9371-d9acb55e9aff"
   },
   {
-    "tipo": "texto",
-    "relato": "Todo sábado minha avó me acordava cedo pra ir à feira. Ela conhecia cada vendedor pelo nome e sempre voltava com uma tapioca pra mim.",
-    "autor": "José Ribamar",
-    "detalhe": "64 anos, mora em Natal (RN)",
-    "epoca": "Anos 1960",
-    "palavras": [
-      "sábado",
-      "avó",
-      "feira"
-    ],
-    "id": "bc73ff11-071a-42ce-a5c9-61dea7564af5"
-  },
-  {
     "tipo": "foto",
-    "foto": "/midia/exemplo-avo.webp",
-    "legenda": "Minha avó mostrando o álbum da família na calçada de casa.",
-    "relato": "Cada foto tinha uma história, e ela lembrava de todas. Gravei tudo no celular pra não perder nenhuma.",
-    "autor": "Lucas Fernandes",
-    "detalhe": "17 anos, embaixador da Campanha",
-    "epoca": "2026",
+    "foto": "/midia/whatsapp-image-2026-11-22-at-124118.jpeg",
+    "legenda": "Junina Lá de Nóis em apresentação",
+    "relato": "Uma das lembranças mais especiais que tenho de São Miguel é, sem dúvidas, o tempo em que fiz parte da Junina Lá de Nóis. Uma época muito especial da minha vida, que deixou marcas bonitas na minha história e que guardo com muito carinho. Lembro dos ensaios, das amizades que construímos, da expectativa pela chegada do São João, dos figurinos, das músicas, das coreografias e de toda a alegria que sentíamos ao entrar na quadra para nos apresentar. Era muito mais do que dançar: era fazer parte de um grupo, compartilhar sonhos, viver momentos de união e representar uma tradição tão bonita da nossa terra. As quadrilhas representam uma parte da cultura e da identidade micaelense. A quadrilha é uma expressão das nossas raízes, uma tradição que reúne pessoas, aproxima gerações e mantém viva a alegria do nosso São João. E eu tenho muito orgulho de ter feito parte dessa história.\n\nTenho saudade daquele tempo, das pessoas, dos encontros e de tudo o que vivemos. Afinal, algumas fases passam, mas as lembranças permanecem. E, se existe algo que tenho certeza, é que uma parte muito bonita da minha história foi escrita dançando pela Junina Lá de Nóis, na minha cidade. São Miguel é feita de lugares, pessoas, tradições e histórias. E essa é uma das histórias que tenho orgulho de contar!",
+    "autor": "Alyda Torres",
+    "detalhe": "25 anos",
     "palavras": [
-      "avó",
-      "família"
-    ],
-    "id": "103cbbc5-cda6-4184-87fd-d69c202e60f3"
-  },
-  {
-    "tipo": "texto",
-    "relato": "A festa do padroeiro era o acontecimento do ano. A praça ficava cheia, tinha parque, leilão e a procissão saindo da igreja.",
-    "autor": "Francisca das Chagas",
-    "detalhe": "71 anos",
-    "epoca": "Anos 1970",
-    "palavras": [
-      "festa",
-      "praça",
-      "igreja"
-    ],
-    "id": "85508335-0a8e-4b45-9346-ca1fdd720b24"
-  },
-  {
-    "tipo": "foto",
-    "foto": "/midia/exemplo-acude.webp",
-    "legenda": "Domingo à tarde na beira do açude.",
-    "relato": "Foi numa caminhada dessas que eu conheci meu marido. Até hoje a gente volta lá todo domingo.",
-    "autor": "Maria José Alves",
-    "detalhe": "49 anos",
-    "epoca": "Anos 1990",
-    "palavras": [
-      "açude"
-    ],
-    "id": "ecd397e7-4619-418b-900d-9d47d0f58787"
-  },
-  {
-    "tipo": "texto",
-    "relato": "Saí de São Miguel com 19 anos pra trabalhar fora. Até hoje, quando cai chuva, lembro do cheiro de terra molhada na rua da casa da minha mãe.",
-    "autor": "Raimundo Nonato",
-    "detalhe": "55 anos, mora em São Paulo (SP)",
-    "epoca": "Anos 1980",
-    "palavras": [
-      "chuva",
-      "rua",
-      "saudade"
-    ],
-    "id": "2bea6306-5c03-48df-810e-16328beeb37d"
-  },
-  {
-    "tipo": "texto",
-    "relato": "Na escola, a professora fazia a gente decorar o hino da cidade. No recreio era futebol no barro até o sino tocar.",
-    "autor": "Pedro Henrique Costa",
-    "detalhe": "40 anos",
-    "epoca": "Anos 1990",
-    "palavras": [
-      "escola",
-      "futebol"
-    ],
-    "id": "a30540f4-0b66-4a08-80b7-d9962bb4a6fc"
-  },
-  {
-    "tipo": "foto",
-    "foto": "/midia/exemplo-praca.webp",
-    "legenda": "As árvores da praça que viram minha infância inteira.",
-    "autor": "Ana Cláudia Souza",
-    "detalhe": "36 anos",
-    "epoca": "Anos 2000",
-    "palavras": [
-      "praça",
-      "infância"
-    ],
-    "id": "25eb7043-565a-4574-8fec-0684ecfa60be"
-  },
-  {
-    "tipo": "texto",
-    "relato": "O futebol de domingo parava a cidade. Meu pai nunca perdeu um jogo, e depois a turma se encontrava na praça pra comentar cada lance.",
-    "autor": "Cícero Souza",
-    "detalhe": "68 anos",
-    "epoca": "Anos 1980",
-    "palavras": [
-      "futebol",
-      "praça"
+      "São João",
+      "músicas",
+      "Junina Lá de Nóis"
     ],
     "id": "b269d8d2-e326-43d1-a950-6d8086a7d7c0"
-  },
-  {
-    "tipo": "texto",
-    "relato": "Minha avó fazia bolo pra vender na feira. Eu ia junto carregando a bandeja e voltava com o bolso cheio de moedas. Hoje, longe, o que mais sinto é saudade daquelas manhãs.",
-    "autor": "Josefa Martins",
-    "detalhe": "45 anos, mora em Mossoró (RN)",
-    "epoca": "Anos 1980",
-    "palavras": [
-      "avó",
-      "feira",
-      "saudade"
-    ],
-    "id": "ac343249-e7a0-4370-a885-9988ad7214c2"
   }
 ]
