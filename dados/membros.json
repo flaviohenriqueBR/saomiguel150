@@ -1,5 +1,20 @@
 [
-  { "nome": "Deise Louise", "foto": "/midia/membro-deise-louise.webp", "funcao": "", "bio": "", "instagram": "" },
-  { "nome": "Nara Jordana", "foto": "/midia/membro-nara-jordana.webp", "funcao": "", "bio": "", "instagram": "" },
-  { "nome": "Flávio Henrique", "foto": "/midia/membro-flavio-henrique.webp", "funcao": "", "bio": "", "instagram": "" }
+  {
+    "nome": "Deise Louise",
+    "foto": "/midia/membro-deise-louise.webp",
+    "bio": "Psicóloga com sólida experiência em psicoterapia e promoção da saúde mental. Atua como psicologia clínica e também na área de recursos humanos, com foco em gestão de pessoas. Com olhar humanizado e estratégico integra saúde mental e ambiente corporativo sempre guiada pelo propósito de entender e cuidar de gente.",
+    "instagram": "deise.fernands"
+  },
+  {
+    "nome": "Nara Jordana",
+    "foto": "/midia/membro-nara-jordana.webp",
+    "bio": "Advogada, formada em Direito pela Universidade Potiguar (UnP), especialista em Direito do Trabalho e Técnica em Administração. Possui sólida experiência em escritórios de advocacia e em instituições públicas, como a Secretaria de Educação do Estado do Rio Grande do Norte e o Tribunal de Justiça.",
+    "instagram": "nara_jordana"
+  },
+  {
+    "nome": "Flávio Henrique",
+    "foto": "/midia/membro-flavio-henrique.webp",
+    "bio": "Graduado em Gestão de Políticas Públicas (USP) e técnico em Informática para Internet (IFRN), com experiência em planejamentos de cidades. Integra desde 2023 a Rede de Servidores Públicos da América Latina, da Fundação Botín.",
+    "instagram": "flavio_hsm"
+  }
 ]
