@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Qual lembrança de São Miguel vive em você? | São Miguel 150+</title>
+<meta name="description" content="Mande a sua lembrança de São Miguel pelo WhatsApp, jogue o Bate-bola da memória e o Você sabe onde é?, e veja histórias de outras pessoas.">
+<meta name="theme-color" content="#B02E26">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="São Miguel 150+">
+<meta property="og:title" content="Qual lembrança de São Miguel vive em você?">
+<meta property="og:description" content="Mande a sua lembrança pelo WhatsApp e brinque com a memória da cidade.">
+<meta property="og:image" content="https://www.saomiguel150.com.br/assets/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/memoria.css">
+</head>
+<body>
+<main id="conteudo" class="app" aria-live="polite">
+
+  <!-- ===================== INÍCIO ===================== -->
+  <section class="vista" data-vista="inicio">
+    <header class="capa">
+      <img class="capa-foto" data-capa-foto src="assets/lago.jpg" alt="" fetchpriority="high">
+      <a class="capa-logo" href="index.html" aria-label="Site do São Miguel 150+"><img src="assets/logo-150-branco.webp" alt="São Miguel 150+" width="120" height="52"></a>
+      <div class="capa-texto">
+        <p class="capa-rotulo" data-rotulo></p>
+        <h1 class="capa-titulo" data-titulo>Qual lembrança de São Miguel vive em você?</h1>
+      </div>
+    </header>
+
+    <div class="folha">
+      <p class="orienta" data-orienta>Toque no botão e conte do seu jeito: escreva, grave um áudio ou mande uma foto.</p>
+      <form class="ficha ficha-inicio" id="enviar" data-form-lembranca novalidate>
+        <label class="campo"><span class="sr-only">Sua lembrança</span>
+          <textarea name="lembranca" rows="4" placeholder="Minha lembrança de São Miguel é…"></textarea>
+        </label>
+        <div class="quem-extra" data-quem-extra><div><div data-quem></div></div></div>
+        <button class="botao-enviar" type="submit">
+          <span class="icone-whats" data-icone-whats></span>
+          <span class="botao-enviar-texto"><span data-botao>Enviar minha lembrança</span><small>abre o WhatsApp com tudo pronto</small></span>
+        </button>
+        <p class="ficha-nota" data-nota>Leva 1 minuto. Sem cadastro.</p>
+      </form>
+      <p class="direto"><a data-direto href="#">Prefere gravar um áudio ou mandar foto? Abra o WhatsApp direto</a></p>
+
+      <section class="brincar" aria-labelledby="brincar-titulo">
+        <h2 class="rotulo-secao" id="brincar-titulo">Brinque na mesa</h2>
+        <div class="jogos">
+          <a class="jogo-card jogo-ocre" href="#bate-bola">
+            <img src="midia/ilustra-geracoes.webp" alt="" loading="lazy">
+            <span class="jogo-card-texto"><strong>Bate-bola da memória</strong><span class="jogo-pill" data-qtd-perguntas>6 perguntas</span></span>
+          </a>
+          <a class="jogo-card jogo-teal" href="#onde-e">
+            <img src="midia/ilustra-mapa-afetivo.webp" alt="" loading="lazy">
+            <span class="jogo-card-texto"><strong>Você sabe onde é?</strong><span class="jogo-pill" data-qtd-lugares>5 lugares</span></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="inspira" data-inspira hidden aria-labelledby="inspira-titulo">
+        <div class="inspira-cab">
+          <h2 id="inspira-titulo">Veja o que outras pessoas lembraram</h2>
+          <a href="#lembrancas">Ver todas</a>
+        </div>
+        <div class="inspira-trilho" data-inspira-trilho></div>
+      </section>
+
+      <div class="metro" data-metro hidden>
+        <p class="metro-numero"><b data-metro-numero>0</b><span data-metro-texto>lembranças já compartilhadas</span></p>
+        <div class="metro-barra" role="progressbar" aria-valuemin="0" data-metro-barra><span data-metro-enchimento></span></div>
+        <p class="metro-meta" data-metro-meta></p>
+      </div>
+
+      <footer class="pe">
+        <a class="botao botao-leve pe-site" href="index.html">
+          <img src="assets/logo-sao-miguel-150.webp" alt="" width="64" height="28">
+          Visitar o site completo
+        </a>
+        <div class="pe-bloco">
+          <p class="pe-rotulo">Realização</p>
+          <picture>
+            <source srcset="assets/smdg-branco.png" media="(prefers-color-scheme: dark)">
+            <img class="pe-smdg" src="assets/smdg-verde.png" alt="São Miguel da Gente" width="534" height="131" loading="lazy">
+          </picture>
+        </div>
+        <div class="pe-bloco" data-apoio hidden>
+          <p class="pe-rotulo">Apoio</p>
+          <ul class="pe-apoio" data-apoiadores></ul>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- ===================== BATE-BOLA ===================== -->
+  <section class="vista" data-vista="bate-bola" hidden>
+    <header class="barra">
+      <a class="voltar" href="#" aria-label="Voltar ao início"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <h1>Bate-bola da memória</h1>
+      <span class="barra-conta" data-bb-conta></span>
+    </header>
+    <div class="bb" data-bb aria-live="polite"></div>
+    <div class="acoes-fixas" data-bb-acoes>
+      <button class="botao botao-leve" type="button" data-bb-pular>Pular</button>
+      <button class="botao botao-escuro" type="button" data-bb-responder>Responder</button>
+      <button class="botao botao-escuro" type="button" data-bb-proxima hidden>Próxima pergunta</button>
+    </div>
+  </section>
+
+  <!-- ===================== VOCÊ SABE ONDE É? ===================== -->
+  <section class="vista" data-vista="onde-e" hidden>
+    <header class="barra">
+      <a class="voltar" href="#" aria-label="Voltar ao início"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <h1>Você sabe onde é?</h1>
+      <span class="barra-conta" data-oe-conta></span>
+    </header>
+    <div class="progresso" data-oe-progresso></div>
+    <div class="jogo" data-oe-jogo></div>
+  </section>
+
+  <!-- ===================== OUTRAS LEMBRANÇAS ===================== -->
+  <section class="vista" data-vista="lembrancas" hidden>
+    <header class="barra">
+      <a class="voltar" href="#" aria-label="Voltar ao início"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <h1>Outras lembranças</h1>
+      <span class="barra-conta"></span>
+    </header>
+    <div class="temas" data-temas role="toolbar" aria-label="Temas"></div>
+    <div class="galeria" data-galeria></div>
+    <div class="acoes-fixas">
+      <a class="botao botao-enviar-pequeno" data-enviar href="#enviar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>Lembrou de algo? Conte a sua</a>
+    </div>
+  </section>
+
+  <!-- ===================== UMA LEMBRANÇA ===================== -->
+  <section class="vista" data-vista="lembranca" hidden>
+    <header class="barra">
+      <a class="voltar" href="#lembrancas" aria-label="Voltar para as lembranças"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
+      <h1>Lembrança</h1>
+      <span class="barra-conta"></span>
+    </header>
+    <article class="historia" data-historia></article>
+  </section>
+
+</main>
+<script src="js/comum.js"></script>
+<script src="js/memoria.js"></script>
+</body>
+</html>

@@ -86,6 +86,27 @@
       .catch(function () {});
   }
 
+  /* ---------- Sinônimos (dados/sinonimos.json, editado no painel) ----------
+     Cada grupo tem uma palavra principal e as que valem como ela.
+     Ex.: avó -> vovó, vó. Todas viram o mesmo filtro, com o nome da principal. */
+  var CANON = {}, PRINCIPAL = {}, VARIANTES = {};
+  function prepararSinonimos(lista) {
+    (lista || []).forEach(function (g) {
+      var k = norm(g && g.palavra);
+      if (!k) return;
+      PRINCIPAL[k] = String(g.palavra).trim().replace(/\s+/g, ' ');
+      CANON[k] = k;
+      VARIANTES[k] = VARIANTES[k] || [k];
+      (g.sinonimos || []).forEach(function (sin) {
+        var v = norm(sin);
+        if (!v || v === k || CANON[v]) return;
+        CANON[v] = k;
+        VARIANTES[k].push(v);
+      });
+    });
+  }
+  function canon(k) { return CANON[k] || k; }
+
   function iniciar(LEMBRANCAS) {
   var rotulos = {};   // chave normalizada -> como a palavra aparece no filtro
 
@@ -93,13 +114,19 @@
     var chaves = {};
     /* Palavras e expressões da lista (ex.: feira, Frei Damião), da mais longa
        para a mais curta, para destacar no texto */
-    var frases = [];
+    var frases = [], vistas = {};
     (l.palavras || []).forEach(function (p) {
-      var k = norm(p);
-      if (!k) return;
-      if (!rotulos[k]) rotulos[k] = String(p).trim().replace(/\s+/g, ' ');
-      var partes = k.match(/[0-9a-z]+(?:-[0-9a-z]+)*/g);
-      if (partes) frases.push({ k: k, partes: partes });
+      var original = norm(p);
+      if (!original) return;
+      var k = canon(original);
+      if (!rotulos[k]) rotulos[k] = PRINCIPAL[k] || String(p).trim().replace(/\s+/g, ' ');
+      /* procura no texto a palavra escrita e todos os seus sinônimos */
+      (VARIANTES[k] || []).concat([original, k]).forEach(function (v) {
+        if (vistas[v]) return;
+        vistas[v] = true;
+        var partes = v.match(/[0-9a-z]+(?:-[0-9a-z]+)*/g);
+        if (partes) frases.push({ k: k, partes: partes });
+      });
     });
     frases.sort(function (a, b) { return b.partes.length - a.partes.length; });
     function botao(visivel, k) {
@@ -141,8 +168,8 @@
       MARCA.lastIndex = 0;
       while ((m = MARCA.exec(s))) {
         var chave = (m[2] || m[1]).trim();
-        var k = norm(chave);
-        if (!rotulos[k]) rotulos[k] = chave;
+        var k = canon(norm(chave));
+        if (!rotulos[k]) rotulos[k] = PRINCIPAL[k] || chave;
         saida += destacar(s.slice(ultimo, m.index)) + botao(m[1].trim(), k);
         ultimo = MARCA.lastIndex;
       }
@@ -152,7 +179,7 @@
     var relatoHtml = marcar(l.relato);
     var extras = [];
     (l.palavras || []).forEach(function (p) {
-      var k = norm(p);
+      var k = canon(norm(p));
       if (!k) return;
       if (!chaves[k]) extras.push(k);
       chaves[k] = true;
@@ -183,7 +210,7 @@
 
   function lerEndereco() {
     var params = new URLSearchParams(location.hash.replace(/^#/, ''));
-    var p = norm(params.get('palavra') || '');
+    var p = canon(norm(params.get('palavra') || ''));
     estado.palavra = contagem[p] ? p : '';
     var t = params.get('tipo');
     estado.tipo = (t === 'foto' || t === 'texto') ? t : 'todas';
@@ -216,10 +243,16 @@
 
   function filtradas() {
     var b = norm(estado.busca);
+    var kb = b ? canon(b) : '';
+    /* sinônimos só contam como palavra inteira ("vó" não encontra "voltava") */
+    var variantes = (kb && VARIANTES[kb] ? VARIANTES[kb] : []).map(function (v) {
+      return new RegExp('(^|[^0-9a-z])' + v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '([^0-9a-z]|$)');
+    });
     return itens.filter(function (it) {
       if (estado.palavra && !it.chaves[estado.palavra]) return false;
       if (estado.tipo !== 'todas' && it.tipo !== estado.tipo) return false;
-      if (b && it.busca.indexOf(b) < 0) return false;
+      if (b && it.busca.indexOf(b) < 0 && !it.chaves[kb] &&
+        !variantes.some(function (re) { return re.test(it.busca); })) return false;
       return true;
     });
   }
@@ -532,7 +565,11 @@
   }
 
   /* A lembrança mais nova (a última da lista no painel) aparece primeiro */
-  Promise.all([SM.carregar(['lembrancas']), buscarTotais()]).then(function (res) {
+  var sinonimos = fetch('dados/sinonimos.json', { cache: 'no-cache' })
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .catch(function () { return []; });
+  Promise.all([SM.carregar(['lembrancas']), buscarTotais(), sinonimos]).then(function (res) {
+    prepararSinonimos(res[2]);
     iniciar((res[0].lembrancas || []).slice().reverse());
   });
 })();

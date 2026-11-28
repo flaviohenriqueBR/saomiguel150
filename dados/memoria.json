@@ -1,0 +1,77 @@
+{
+  "inicio": {
+    "rotulo": "Festival Gastronômico · 10 a 13 de dezembro",
+    "titulo": "Qual lembrança de São Miguel vive em você?",
+    "orientacao": "Conte aqui e envie pelo WhatsApp.",
+    "botao": "Enviar minha lembrança",
+    "nota": "Leva 1 minuto. Sem cadastro.",
+    "mensagem": "Oi! Quero compartilhar uma lembrança de São Miguel para o São Miguel 150+.",
+    "imagem": "/assets/lago.jpg"
+  },
+  "lembrancometro": {
+    "numero": 87,
+    "meta": 150,
+    "texto": "lembranças já compartilhadas"
+  },
+  "perguntas": [
+    "Qual era seu lugar preferido para encontrar os amigos?",
+    "Qual festa de São Miguel você nunca esqueceu?",
+    "Que comida lembra sua infância?",
+    "Quem marcou sua história na cidade?",
+    "Qual brincadeira você costumava fazer?",
+    "Se pudesse reviver um dia em São Miguel, qual seria?",
+    "Qual som você mais ouvia na sua rua?",
+    "Qual bodega ou loja não existe mais e deixa saudade?",
+    "Onde você tomava banho de chuva ou de açude?",
+    "Que música lembra São Miguel?",
+    "Qual apelido de alguém da cidade você nunca esqueceu?",
+    "Qual foi o dia mais feliz que você viveu em São Miguel?"
+  ],
+  "lugares": [
+    {
+      "foto": "/midia/onde-e-exemplo-1.webp",
+      "lugar": "Açude",
+      "outras": [
+        "Praça da Matriz",
+        "Mercado público"
+      ],
+      "curiosidade": "Texto de exemplo. Troque no painel por uma curiosidade curta e validada sobre o lugar."
+    },
+    {
+      "foto": "/midia/onde-e-exemplo-2.webp",
+      "lugar": "Igreja Matriz",
+      "outras": [
+        "Antiga estação",
+        "Escola estadual"
+      ],
+      "curiosidade": "Texto de exemplo. Troque no painel por uma curiosidade curta e validada sobre o lugar."
+    },
+    {
+      "foto": "/midia/onde-e-exemplo-3.webp",
+      "lugar": "Praça da Matriz",
+      "outras": [
+        "Açude",
+        "Feira livre"
+      ],
+      "curiosidade": "Texto de exemplo. Troque no painel por uma curiosidade curta e validada sobre o lugar."
+    },
+    {
+      "foto": "/midia/onde-e-exemplo-4.webp",
+      "lugar": "Mercado público",
+      "outras": [
+        "Igreja Matriz",
+        "Rua Grande"
+      ],
+      "curiosidade": "Texto de exemplo. Troque no painel por uma curiosidade curta e validada sobre o lugar."
+    },
+    {
+      "foto": "/midia/onde-e-exemplo-5.webp",
+      "lugar": "Feira livre",
+      "outras": [
+        "Praça da Matriz",
+        "Antiga estação"
+      ],
+      "curiosidade": "Texto de exemplo. Troque no painel por uma curiosidade curta e validada sobre o lugar."
+    }
+  ]
+}

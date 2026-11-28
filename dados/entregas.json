@@ -5,7 +5,8 @@
     "status": "construcao",
     "previsao": "dez 2026",
     "descricao": "Fotografias, documentos e relatos reunidos na Campanha de Histórias, com busca por palavras.",
-    "imagem": "/midia/capa.png",
+    "imagem": "/assets/ilustra-cameras.webp",
+    "posicaoImagem": "",
     "link": "acervo.html",
     "atividade": "campanha"
   },
@@ -13,15 +14,22 @@
     "nome": "Vídeos de pessoas e suas histórias",
     "fase": "memoria",
     "status": "prevista",
+    "previsao": "",
     "descricao": "Moradores contando as próprias histórias, com estética de câmeras e registros familiares antigos.",
+    "imagem": "",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "campanha"
   },
   {
     "nome": "Vídeo de conexão entre gerações",
     "fase": "memoria",
     "status": "prevista",
+    "previsao": "",
     "descricao": "Como experiências, costumes e memórias passam de uma geração para outra.",
     "imagem": "/midia/ilustra-geracoes.webp",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "campanha"
   },
   {
@@ -30,13 +38,20 @@
     "status": "prevista",
     "previsao": "jul 2027",
     "descricao": "Seleção de 150 histórias que representam diferentes momentos, pessoas e experiências de São Miguel.",
+    "imagem": "",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "campanha"
   },
   {
     "nome": "Túnel do Tempo",
     "fase": "memoria",
     "status": "prevista",
+    "previsao": "",
     "descricao": "Exposição com fotografias, objetos, vídeos, áudios, documentos e uma linha do tempo da cidade.",
+    "imagem": "",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "campanha"
   },
   {
@@ -45,7 +60,10 @@
     "status": "prevista",
     "previsao": "jul 2027",
     "descricao": "Roteiro pela cidade com os lugares e fatos históricos, playlist explicando cada lugar e vídeo que recria São Miguel em diferentes épocas.",
-    "imagem": "/midia/ilustra-recontando.webp"
+    "imagem": "/midia/ilustra-recontando.webp",
+    "posicaoImagem": "",
+    "link": "",
+    "atividade": ""
   },
   {
     "nome": "Mapa dos Micaelenses",
@@ -53,6 +71,9 @@
     "status": "prevista",
     "previsao": "dez 2026",
     "descricao": "Onde estão os micaelenses que vivem fora da cidade: outros municípios, estados e países.",
+    "imagem": "",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "campanha"
   },
   {
@@ -61,6 +82,9 @@
     "status": "prevista",
     "previsao": "jul 2027",
     "descricao": "150 palavras que ajudam a definir São Miguel, com seus significados para os micaelenses.",
+    "imagem": "",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "e-de-sao-miguel"
   },
   {
@@ -70,14 +94,19 @@
     "previsao": "jul 2027",
     "descricao": "Instalação artística em muro de grande circulação, feita com palavras, frases e imagens coletadas no projeto.",
     "imagem": "/midia/ilustra-muro.webp",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "e-de-sao-miguel"
   },
   {
     "nome": "Mapa Afetivo",
     "fase": "identidade",
     "status": "prevista",
+    "previsao": "",
     "descricao": "Mapa construído a partir dos lugares escolhidos pela população e pelas crianças.",
     "imagem": "/midia/ilustra-mapa-afetivo.webp",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "mapa-afetivo"
   },
   {
@@ -87,6 +116,8 @@
     "previsao": "jul 2027",
     "descricao": "Mudas plantadas por quem participou da Escuta São Miguel.",
     "imagem": "/midia/ilustra-arvore.webp",
+    "posicaoImagem": "",
+    "link": "",
     "atividade": "escuta"
   },
   {
@@ -96,8 +127,9 @@
     "previsao": "dez 2027",
     "descricao": "O que foi ouvido durante o projeto transformado em 150 compromissos concretos para o futuro da cidade.",
     "imagem": "/midia/ilustra-legado.webp",
-    "atividade": "escuta",
-    "posicaoImagem": "left center"
+    "posicaoImagem": "left center",
+    "link": "",
+    "atividade": "escuta"
   },
   {
     "nome": "Carta de São Miguel para o Futuro",
@@ -106,7 +138,9 @@
     "previsao": "dez 2027",
     "descricao": "Mensagem construída durante o projeto e dirigida ao São Miguel de amanhã.",
     "imagem": "/midia/ilustra-legado.webp",
-    "posicaoImagem": "center"
+    "posicaoImagem": "center",
+    "link": "",
+    "atividade": ""
   },
   {
     "nome": "Cápsula do Futuro",
@@ -115,6 +149,8 @@
     "previsao": "dez 2027",
     "descricao": "Cartas, desenhos, fotografias, palavras e objetos guardados para serem abertos numa data simbólica.",
     "imagem": "/midia/ilustra-legado.webp",
-    "posicaoImagem": "right center"
+    "posicaoImagem": "right center",
+    "link": "",
+    "atividade": ""
   }
 ]

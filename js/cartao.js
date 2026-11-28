@@ -49,8 +49,11 @@
     if (n.length === 10) return '(' + n.slice(0, 2) + ') ' + n.slice(2, 6) + '-' + n.slice(6);
     return '';
   }
-  /* Endereço do site, só quando ele está publicado (no computador mostraria "localhost") */
+  /* Endereço do site: o do painel (Configurações > Contato > Endereço do site);
+     se estiver vazio, o endereço da página, só quando ela está publicada */
   function enderecoPublico() {
+    var fixo = String(((SM.site || {}).contato || {}).endereco || '').trim();
+    if (fixo) return fixo.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/+$/, '');
     var h = location.hostname || '';
     if (location.protocol.indexOf('http') !== 0 || /^(localhost|127\.|0\.0\.0\.0|10\.|192\.168\.|\[)/.test(h) || h.indexOf('.') < 0) return '';
     return location.host.replace(/^www\./, '');

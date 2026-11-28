@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Respostas do Bate-bola | São Miguel 150+</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/memoria.css">
+<style>
+  .mod { max-width: 760px; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+  .mod h1 { margin: 0; font-size: 1.5rem; }
+  .mod > p { margin: .3rem 0 1.25rem; color: var(--texto-2); }
+  .mod-entrar { display: flex; gap: .5rem; flex-wrap: wrap; }
+  .mod-entrar input { flex: 1; min-width: 200px; min-height: 48px; padding: .6rem 1rem; border: 0; border-radius: 14px; background: var(--folha); color: var(--texto); font: inherit; box-shadow: inset 0 0 0 1.5px var(--linha); }
+  .mod-barra { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin: 1.25rem 0 .5rem; }
+  .mod-barra label { display: inline-flex; align-items: center; gap: .4rem; font-size: .9rem; font-weight: 500; }
+  .mod-barra .resumo { flex: 1; font-size: .9rem; color: var(--texto-2); }
+  .mod-erro { margin: 1rem 0 0; color: var(--erro); font-weight: 500; }
+  .mod-pergunta { margin-top: 1.5rem; }
+  .mod-pergunta h2 { margin: 0 0 .5rem; font-size: 1.05rem; }
+  .mod-pergunta h2 small { font-weight: 500; color: var(--texto-2); }
+  .mod-item { display: flex; align-items: flex-start; gap: .75rem; padding: .7rem .9rem; margin-bottom: .4rem; border-radius: 14px; background: var(--folha); box-shadow: inset 0 0 0 1px var(--linha); }
+  .mod-item p { flex: 1; margin: 0; }
+  .mod-item time { display: block; font-size: .75rem; color: var(--texto-2); }
+  .mod-item.oculta { opacity: .6; background: var(--erro-c); }
+  .mod-item .botao { min-height: 38px; padding: .35rem .9rem; font-size: .85rem; flex: none; }
+</style>
+</head>
+<body>
+<main class="mod">
+  <h1>Respostas do Bate-bola</h1>
+  <p>Página da equipe. Respostas escondidas não aparecem no jogo. As que têm palavrão já chegam escondidas.</p>
+
+  <form class="mod-entrar" data-entrar>
+    <input type="password" name="senha" placeholder="Senha da equipe" autocomplete="current-password" required>
+    <button class="botao botao-escuro" type="submit">Ver respostas</button>
+  </form>
+  <p class="mod-erro" data-erro hidden></p>
+
+  <div data-painel hidden>
+    <div class="mod-barra">
+      <span class="resumo" data-resumo></span>
+      <label><input type="checkbox" data-so-ocultas> Só as escondidas</label>
+      <button class="botao botao-leve" type="button" data-csv>Baixar planilha</button>
+    </div>
+    <div data-lista></div>
+  </div>
+</main>
+<script>
+(function () {
+  'use strict';
+  var $ = function (s) { return document.querySelector(s); };
+  var senha = '';
+  try { senha = sessionStorage.getItem('sm150-senha') || ''; } catch (e) { /* ignora */ }
+  var dados = [];
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function data(d) { try { return new Date(d).toLocaleString('pt-BR', { dateStyle: 'short', timeStyle: 'short' }); } catch (e) { return ''; } }
+  function erro(msg) { var e = $('[data-erro]'); e.textContent = msg; e.hidden = !msg; }
+
+  function carregar() {
+    erro('');
+    fetch('api/batebola?moderar=1', { headers: { 'x-senha': senha }, cache: 'no-store' })
+      .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+      .then(function (r) {
+        if (!r.ok) { erro(r.j.erro || 'Não foi possível carregar.'); $('[data-painel]').hidden = true; return; }
+        try { sessionStorage.setItem('sm150-senha', senha); } catch (e) { /* ignora */ }
+        dados = r.j.perguntas || [];
+        $('[data-entrar]').hidden = true;
+        $('[data-painel]').hidden = false;
+        desenhar();
+      })
+      .catch(function () { erro('Não foi possível falar com o site. Confira a conexão.'); });
+  }
+  function desenhar() {
+    var so = $('[data-so-ocultas]').checked, total = 0, ocultas = 0;
+    dados.forEach(function (p) { p.respostas.forEach(function (r) { total++; if (r.oculta) ocultas++; }); });
+    $('[data-resumo]').textContent = total + ' respostas em ' + dados.length + ' perguntas · ' + ocultas + ' escondidas';
+    $('[data-lista]').innerHTML = dados.map(function (p) {
+      var itens = p.respostas.filter(function (r) { return !so || r.oculta; });
+      if (!itens.length) return '';
+      return '<section class="mod-pergunta"><h2>' + esc(p.pergunta) + ' <small>(' + p.respostas.length + ')</small></h2>' +
+        itens.map(function (r) {
+          return '<div class="mod-item' + (r.oculta ? ' oculta' : '') + '"><p>' + esc(r.t) + '<time>' + data(r.d) + (r.oculta ? ' · escondida' : '') + '</time></p>' +
+            '<button class="botao ' + (r.oculta ? 'botao-escuro' : 'botao-leve') + '" type="button" data-id="' + esc(r.id) + '" data-acao="' + (r.oculta ? 'mostrar' : 'ocultar') + '">' +
+            (r.oculta ? 'Mostrar' : 'Esconder') + '</button></div>';
+        }).join('') + '</section>';
+    }).join('') || '<p class="vazio">Nenhuma resposta por aqui.</p>';
+  }
+  $('[data-entrar]').addEventListener('submit', function (e) {
+    e.preventDefault(); senha = e.target.senha.value; carregar();
+  });
+  $('[data-so-ocultas]').addEventListener('change', desenhar);
+  $('[data-lista]').addEventListener('click', function (e) {
+    var b = e.target.closest('[data-acao]');
+    if (!b) return;
+    b.disabled = true;
+    fetch('api/batebola', { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-senha': senha },
+      body: JSON.stringify({ acao: b.getAttribute('data-acao'), id: b.getAttribute('data-id') }) })
+      .then(function (r) {
+        if (!r.ok) throw new Error();
+        dados.forEach(function (p) { p.respostas.forEach(function (x) { if (x.id === b.getAttribute('data-id')) x.oculta = b.getAttribute('data-acao') === 'ocultar'; }); });
+        desenhar();
+      })
+      .catch(function () { b.disabled = false; erro('Não deu para salvar. Tente de novo.'); });
+  });
+  $('[data-csv]').addEventListener('click', function () {
+    var linhas = [['Pergunta', 'Resposta', 'Data', 'Situação']];
+    dados.forEach(function (p) { p.respostas.forEach(function (r) { linhas.push([p.pergunta, r.t, data(r.d), r.oculta ? 'escondida' : 'visível']); }); });
+    var csv = '﻿' + linhas.map(function (l) { return l.map(function (c) { return '"' + String(c).replace(/"/g, '""') + '"'; }).join(';'); }).join('\r\n');
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    a.download = 'respostas-bate-bola.csv';
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+  if (senha) carregar();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/memoria", "destination": "/memoria.html" },
+    { "source": "/memoria/", "destination": "/memoria.html" }
+  ]
+}

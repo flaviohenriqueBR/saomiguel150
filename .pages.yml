@@ -59,12 +59,119 @@ content:
         type: string
         list: true
         description: "Uma por linha: palavras ou nomes que aparecem no texto (ex.: feira, praça, Frei Damião). Ficam destacados sozinhos, com ou sem acento, e levam a outras lembranças com a mesma palavra."
+      - name: tema
+        label: Tema
+        type: string
+        description: "Opcional. Uma palavra que agrupa a lembrança no app /memoria. Ex.: Festas, Infância, Família, Lugares"
+      - name: app
+        label: Mostrar no app /memoria
+        type: boolean
+        description: "Marque só as lembranças autorizadas para aparecer em Ver outras lembranças, no app das mesas."
       - name: id
         label: Código da lembrança
         type: uuid
         options:
           editable: false
         description: Gerado sozinho. Serve para as curtidas e o link de compartilhar. Não precisa mexer.
+
+  # ------------------------------------------------------------------
+  - name: sinonimos
+    label: "Acervo: sinônimos"
+    type: file
+    path: dados/sinonimos.json
+    format: json
+    list: true
+    fields:
+      - name: palavra
+        label: Palavra principal
+        type: string
+        required: true
+        description: "É o nome que aparece no filtro do acervo. Ex.: avó"
+      - name: sinonimos
+        label: Também vale para
+        type: string
+        list: true
+        description: "Uma por linha. Ex.: vovó, vó. Essas palavras também ficam destacadas e entram no mesmo filtro."
+
+  # ------------------------------------------------------------------
+  - name: memoria
+    label: "App /memoria (mesas)"
+    type: file
+    path: dados/memoria.json
+    format: json
+    fields:
+      - name: inicio
+        label: Tela inicial
+        type: object
+        fields:
+          - name: rotulo
+            label: Etiqueta
+            type: string
+            description: "Linha pequena acima da pergunta. Ex.: Festival Gastronômico · 10 a 13 de dezembro"
+          - name: titulo
+            label: Pergunta principal
+            type: string
+          - name: orientacao
+            label: Frase de orientação (acima do botão)
+            type: string
+            description: "Curta. Ex.: Escreva aqui, diga quem é você e envie pelo WhatsApp."
+          - name: botao
+            label: Texto do botão
+            type: string
+          - name: nota
+            label: Frase abaixo do botão
+            type: string
+          - name: mensagem
+            label: Início da mensagem do WhatsApp
+            type: text
+            description: "O formulário acrescenta o nome, onde a pessoa mora e a lembrança escrita."
+          - name: imagem
+            label: Foto do topo
+            type: image
+      - name: lembrancometro
+        label: Lembrançômetro
+        type: object
+        description: "Contador da tela inicial. Atualize o número algumas vezes por dia. Deixe 0 para esconder."
+        fields:
+          - name: numero
+            label: Lembranças recebidas até agora
+            type: number
+          - name: meta
+            label: Meta
+            type: number
+            description: "Ex.: 150"
+          - name: texto
+            label: Texto ao lado do número
+            type: string
+            description: "Ex.: lembranças já compartilhadas"
+      - name: perguntas
+        label: "Bate-bola: banco de perguntas"
+        type: string
+        list: true
+        description: "Uma por linha. O jogo mostra uma por vez, sorteada. Mudar o texto de uma pergunta começa uma lista de respostas nova para ela."
+      - name: lugares
+        label: "Você sabe onde é? (lugares)"
+        type: object
+        list: true
+        description: "Cada partida sorteia 5 lugares desta lista. Pode cadastrar mais de 5."
+        fields:
+          - name: foto
+            label: Foto do lugar
+            type: image
+            required: true
+          - name: lugar
+            label: Nome certo
+            type: string
+            required: true
+          - name: outras
+            label: Opções erradas
+            type: string
+            list: true
+            description: Duas opções, uma por linha.
+          - name: curiosidade
+            label: Curiosidade
+            type: text
+            description: Uma ou duas frases, mostradas depois da resposta.
 
   # ------------------------------------------------------------------
   - name: agenda
@@ -244,6 +351,10 @@ content:
             label: WhatsApp do projeto
             type: string
             description: "Só números, com 55 e DDD. Ex.: 5584991454401"
+          - name: endereco
+            label: Endereço do site
+            type: string
+            description: "Aparece no cartão de compartilhar lembranças. Ex.: saomiguel150.com.br"
           - name: comunidade
             label: Link de convite da comunidade do WhatsApp
             type: string
